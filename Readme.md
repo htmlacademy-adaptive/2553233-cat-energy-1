@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Дима Касаткин](https://up.htmlacademy.ru/adaptive-individual/1/user/2553233).
-* Наставник: `Неизвестно`.
+* Наставник:[Ярослав Шевцов](https://htmlacademy.ru/profile/redx).
 
 ---
 
