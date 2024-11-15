@@ -7,20 +7,20 @@
 </head>
   <body class="page__body">
     <header class="main-header">
-      <a class="site__logo">
+      <a class="logo">
         <img src="img/logo.svg" height="50px" width="60px" alt="Кэт энерджи">
         <img src="img/site-name.svg" height="18px" width="101px" alt="Название сайта CAT ENERGY">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <div class="main-nav__wrapper">
-          <ul class="main-nav__list secondary-nav__list">
+          <ul class="main-nav__list">
             <li class="main-nav__item">
               <a href="index.html">
                 Главная
               </a>
             </li>
-            <li class="main-nav__item secondary-nav__item--active">
+            <li class="main-nav__item main-nav__item--active">
               <a>
                 Каталог продукций
               </a>
@@ -36,8 +36,8 @@
     </header>
 
     <main class="main-container">
-      <h1 class="catalog__title">Каталог продукции</h1>
       <section class="catalog">
+        <h1 class="catalog__title">Каталог продукции</h1>
         <h2 class="visually-hidden">Список товаров в каталоге</h2>
         <div class="catalog__wrapper">
           <ul class="catalog__list">
@@ -45,20 +45,20 @@
               <article class="card">
                 <h3 class="card__title">Cat Energy PRO 500 г</h3>
                 <img class="card__image" src="img/cat-energy-pro-500-chiken.png" width="68px" height="86px" alt="Фото для товара Cat Energy PRO 500 г со вкусом курица">
-                <div class="card__description">
-                  <div class="card__definition">
-                    <p class="card__definition-name">Масса</p>
-                    <p class="card__definition-value">500 г</p>
-                  </div>
-                  <div class="card__definition">
-                    <p class="card__definition-name">Вкус</p>
-                    <p class="card__definition-value">Курица</p>
-                  </div>
-                  <div class="card__definition">
-                    <p class="card__definition-name">Цена</p>
-                    <p class="card__definition-value">700 ₽</p>
-                  </div>
-                </div>
+                <table class="card__description">
+                  <tr class="card__definition">
+                    <th class="card__definition-name">Масса</p>
+                    <th class="card__definition-value">500 г</p>
+                  </tr>
+                  <tr class="card__definition">
+                    <th class="card__definition-name">Вкус</p>
+                    <th class="card__definition-value">Курица</p>
+                  </tr>
+                  <tr class="card__definition">
+                    <th class="card__definition-name">Цена</p>
+                    <th class="card__definition-value">700 ₽</p>
+                  </tr>
+                </table>
                 <a class="button card__link" href="#">Заказать</a>
               </article>
             </li>
@@ -66,20 +66,20 @@
               <article class="card">
                 <h3 class="card__title">Cat Energy PRO 1000 г</h3>
                 <img class="card__image" src="img/cat-energy-pro-1000-chiken.png" width="68px" height="86px" alt="Фото для товара Cat Energy PRO 1000 г со вкусом курицы">
-                <div class="card__description">
-                  <div class="card__definition">
-                    <p class="card__definition-name">Масса</p>
-                    <p class="card__definition-value">1000 г</p>
-                  </div>
-                  <div class="card__definition">
-                    <p class="card__definition-name">Вкус</p>
-                    <p class="card__definition-value">Курица</p>
-                  </div>
-                  <div class="card__definition">
-                    <p class="card__definition-name">Цена</p>
-                    <p class="card__definition-value">1000 ₽</p>
-                  </div>
-                </div>
+                <table class="card__description">
+                  <tr class="card__definition">
+                    <th class="card__definition-name">Масса</p>
+                    <th class="card__definition-value">1000 г</p>
+                  </tr>
+                  <tr class="card__definition">
+                    <th class="card__definition-name">Вкус</p>
+                    <th class="card__definition-value">Курица</p>
+                  </tr>
+                  <tr class="card__definition">
+                    <th class="card__definition-name">Цена</p>
+                    <th class="card__definition-value">1000 ₽</p>
+                  </tr>
+                </table>
                 <a class="button card__link" href="#">Заказать</a>
               </article>
             </li>
@@ -87,20 +87,20 @@
               <article class="card">
                 <h3 class="card__title">Cat Energy PRO 500 г</h3>
                 <img class="card__image" src="img/cat-energy-pro-500-fish.png" width="68px" height="86px" alt="Фото для товара Cat Energy PRO 500 г со вкусом рыбы">
-                <div class="card__description">
-                  <div class="card__definition">
-                    <p class="card__definition-name">Масса</p>
-                    <p class="card__definition-value">500 г</p>
-                  </div>
-                  <div class="card__definition">
-                    <p class="card__definition-name">Вкус</p>
-                    <p class="card__definition-value">Рыба</p>
-                  </div>
-                  <div class="card__definition">
-                    <p class="card__definition-name">Цена</p>
-                    <p class="card__definition-value">700 ₽</p>
-                  </div>
-                </div>
+                <table class="card__description">
+                  <tr class="card__definition">
+                    <th class="card__definition-name">Масса</p>
+                    <th class="card__definition-value">500 г</p>
+                  </tr>
+                  <tr class="card__definition">
+                    <th class="card__definition-name">Вкус</p>
+                    <th class="card__definition-value">Рыба</p>
+                  </tr>
+                  <tr class="card__definition">
+                    <th class="card__definition-name">Цена</p>
+                    <th class="card__definition-value">700 ₽</p>
+                  </tr>
+                </table>
                 <a class="button card__link" href="#">Заказать</a>
               </article>
             </li>
@@ -108,20 +108,20 @@
               <article class="card">
                 <h3 class="card__title">Cat Energy PRO 1000 г</h3>
                 <img class="card__image" src="img/cat-energy-pro-1000-fish.png" width="68px" height="86px" alt="Фото для товара Cat Energy PRO 500 г со вкусом рыбы">
-                <div class="card__description">
-                  <div class="card__definition">
-                    <p class="card__definition-name">Масса</p>
-                    <p class="card__definition-value">1000 г</p>
-                  </div>
-                  <div class="card__definition">
-                    <p class="card__definition-name">Вкус</p>
-                    <p class="card__definition-value">Рыба</p>
-                  </div>
-                  <div class="card__definition">
-                    <p class="card__definition-name">Цена</p>
-                    <p class="card__definition-value">1000 ₽</p>
-                  </div>
-                </div>
+                <table class="card__description">
+                  <tr class="card__definition">
+                    <th class="card__definition-name">Масса</p>
+                    <th class="card__definition-value">1000 г</p>
+                  </tr>
+                  <tr class="card__definition">
+                    <th class="card__definition-name">Вкус</p>
+                    <th class="card__definition-value">Рыба</p>
+                  </tr>
+                  <tr class="card__definition">
+                    <th class="card__definition-name">Цена</p>
+                    <th class="card__definition-value">1000 ₽</p>
+                  </tr>
+                </table>
                 <a class="button card__link" href="#">Заказать</a>
               </article>
             </li>
@@ -129,20 +129,20 @@
               <article class="card">
                 <h3 class="card__title">Cat Energy Slim 500 г</h3>
                 <img class="card__image" src="img/cat-energy-pro-500-buckwheat.png" width="68px" height="86px" alt="Фото для товара Cat Energy PRO 500 г со вкусом гречи">
-                <div class="card__description">
-                  <div class="card__definition">
-                    <p class="card__definition-name">Масса</p>
-                    <p class="card__definition-value">500 г</p>
-                  </div>
-                  <div class="card__definition">
-                    <p class="card__definition-name">Вкус</p>
-                    <p class="card__definition-value">Гречка</p>
-                  </div>
-                  <div class="card__definition">
-                    <p class="card__definition-name">Цена</p>
-                    <p class="card__definition-value">400 ₽</p>
-                  </div>
-                </div>
+                <table class="card__description">
+                  <tr class="card__definition">
+                    <th class="card__definition-name">Масса</p>
+                    <th class="card__definition-value">500 г</p>
+                  </tr>
+                  <tr class="card__definition">
+                    <th class="card__definition-name">Вкус</p>
+                    <th class="card__definition-value">Гречка</p>
+                  </tr>
+                  <tr class="card__definition">
+                    <th class="card__definition-name">Цена</p>
+                    <th class="card__definition-value">400 ₽</p>
+                  </tr>
+                </table>
                 <a class="button card__link" href="#">Заказать</a>
               </article>
             </li>
@@ -150,20 +150,20 @@
               <article class="card">
                 <h3 class="card__title">Cat Energy Slim 500 г</h3>
                 <img class="card__image" src="img/cat-energy-pro-1000-buckwheat.png" width="68px" height="86px" alt="Фото для товара Cat Energy PRO 500 г со вкусом гречи">
-                <div class="card__description">
-                  <div class="card__definition">
-                    <p class="card__definition-name">Масса</p>
-                    <p class="card__definition-value">1000 г</p>
-                  </div>
-                  <div class="card__definition">
-                    <p class="card__definition-name">Вкус</p>
-                    <p class="card__definition-value">Гречка</p>
-                  </div>
-                  <div class="card__definition">
-                    <p class="card__definition-name">Цена</p>
-                    <p class="card__definition-value">1000 ₽</p>
-                  </div>
-                </div>
+                <table class="card__description">
+                  <tr class="card__definition">
+                    <th class="card__definition-name">Масса</p>
+                    <th class="card__definition-value">1000 г</p>
+                  </tr>
+                  <tr class="card__definition">
+                    <th class="card__definition-name">Вкус</p>
+                    <th class="card__definition-value">Гречка</p>
+                  </tr>
+                  <tr class="card__definition">
+                    <th class="card__definition-name">Цена</p>
+                    <th class="card__definition-value">1000 ₽</p>
+                  </tr>
+                </table>
                 <a class="button card__link" href="#">Заказать</a>
               </article>
             </li>
@@ -171,20 +171,20 @@
               <article class="card">
                 <h3 class="card__title">Cat Energy Slim 500 г</h3>
                 <img class="card__image" src="img/cat-energy-pro-500-rice.png" width="68px" height="86px" alt="Фото для товара Cat Energy PRO 500 г со вкусом риса">
-                <div class="card__description">
-                  <div class="card__definition">
-                    <p class="card__definition-name">Масса</p>
-                    <p class="card__definition-value">500 г</p>
-                  </div>
-                  <div class="card__definition">
-                    <p class="card__definition-name">Вкус</p>
-                    <p class="card__definition-value">Рис</p>
-                  </div>
-                  <div class="card__definition">
-                    <p class="card__definition-name">Цена</p>
-                    <p class="card__definition-value">500 ₽</p>
-                  </div>
-                </div>
+                <table class="card__description">
+                  <tr class="card__definition">
+                    <th class="card__definition-name">Масса</p>
+                    <th class="card__definition-value">500 г</p>
+                  </tr>
+                  <tr class="card__definition">
+                    <th class="card__definition-name">Вкус</p>
+                    <th class="card__definition-value">Рис</p>
+                  </tr>
+                  <tr class="card__definition">
+                    <th class="card__definition-name">Цена</p>
+                    <th class="card__definition-value">500 ₽</p>
+                  </tr>
+                </table>
                 <a class="button card__link" href="#">Заказать</a>
               </article>
             </li>
@@ -210,7 +210,7 @@
                   <p class="additional-goods-card__description-name">1 упаковка (100 г)</p>
                   <p class="additional-goods-card__description-price">200 ₽</p>
                 </div>
-                <a class="button card__link">Заказать</a>
+                <a class="button additional-goods__link">Заказать</a>
               </section>
             </li>
             <li class="additional-goods__item">
@@ -220,7 +220,7 @@
                   <p class="additional-goods-card__description-name">5 литров</p>
                   <p class="additional-goods-card__description-price">50 ₽</p>
                 </div>
-                <a class="button card__link">Заказать</a>
+                <a class="button additional-goods__link">Заказать</a>
               </section>
             </li>
             <li class="additional-goods__item">
@@ -230,7 +230,7 @@
                   <p class="additional-goods-card__description-name">1 литр</p>
                   <p class="additional-goods-card__description-price">100 ₽</p>
                 </div>
-                <a class="button card__link">Заказать</a>
+                <a class="button additional-goods__link">Заказать</a>
               </section>
             </li>
             <li class="additional-goods__item">
@@ -240,7 +240,7 @@
                   <p class="additional-goods-card__description-name">1 упаковка (30 г)</p>
                   <p class="additional-goods-card__description-price">300 ₽</p>
                 </div>
-                <a class="button card__link">Заказать</a>
+                <a class="button additional-goods__link">Заказать</a>
               </section>
             </li>
             <p class="additional-goods__present">Закажите все и получите чехол для кота в подарок!</p>
