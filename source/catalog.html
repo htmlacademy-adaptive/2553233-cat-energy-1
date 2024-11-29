@@ -3,11 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page__body">
-    <header class="main-header">
-      <a class="logo">
-        <img src="img/logo.svg" height="50px" width="60px" alt="Кэт энерджи">
+    <header class="main-header main-header--secondary">
+      <a class="main-header__logo">
+        <img src="img/logo.svg" height="38px" width="33px" alt="Кэт энерджи">
         <img src="img/site-name.svg" height="18px" width="101px" alt="Название сайта CAT ENERGY">
       </a>
       <nav class="main-nav">
@@ -15,17 +16,17 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a href="index.html">
+              <a class="main-nav__link" href="index.html">
                 Главная
               </a>
             </li>
             <li class="main-nav__item main-nav__item--active">
-              <a>
+              <a class="main-nav__link" href="#">
                 Каталог продукций
               </a>
             </li>
             <li class="main-nav__item">
-              <a href="form.html">
+              <a class="main-nav__link" href="form.html">
                 Подбор программы
               </a>
             </li>
@@ -42,22 +43,26 @@
           <ul class="catalog__list">
             <li class="catalog__item">
               <article class="card">
-                <h3 class="card__title">Cat Energy PRO 500 г</h3>
-                <img class="card__image" src="img/cat-energy-pro-500-chiken.png" width="68px" height="86px" alt="Фото для товара Cat Energy PRO 500 г со вкусом курица">
-                <table class="card__description">
-                  <tr class="card__definition">
-                    <th class="card__definition-name">Масса</p>
-                    <th class="card__definition-value">500 г</p>
-                  </tr>
-                  <tr class="card__definition">
-                    <th class="card__definition-name">Вкус</p>
-                    <th class="card__definition-value">Курица</p>
-                  </tr>
-                  <tr class="card__definition">
-                    <th class="card__definition-name">Цена</p>
-                    <th class="card__definition-value">700 ₽</p>
-                  </tr>
-                </table>
+                <div class="card__wrapper">
+                  <img class="card__image" src="img/cat-energy-pro-500-chiken.png" width="68px" height="86px" alt="Фото для товара Cat Energy PRO 500 г со вкусом курица">
+                  <div class="card__wrapper-description">
+                    <h3 class="card__title">Cat Energy PRO 500 г</h3>
+                    <table class="card__description">
+                      <tr class="card__definition">
+                        <th class="card__definition-name">Масса</p>
+                        <th class="card__definition-value">500 г</p>
+                      </tr>
+                      <tr class="card__definition">
+                        <th class="card__definition-name">Вкус</p>
+                        <th class="card__definition-value">Курица</p>
+                      </tr>
+                      <tr class="card__definition">
+                        <th class="card__definition-name">Цена</p>
+                        <th class="card__definition-value">700 ₽</p>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
                 <a class="button card__link" href="#">Заказать</a>
               </article>
             </li>
@@ -256,8 +261,8 @@
             Конюшенная, д. 19/8<br>
             Санкт-Петербург
           </p>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036257198161!2d30.32047247732078!3d59.93871916209359!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1730462590686!5m2!1sru!2sru" width="320" height="362" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
+        <iframe class="cooperation__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036257198161!2d30.32047247732078!3d59.93871916209359!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1730462590686!5m2!1sru!2sru" width="320" height="362" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </section>
     </main>
 
