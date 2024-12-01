@@ -39,7 +39,7 @@
       <section class="program-selection">
         <div class="program-selection__wrapper">
           <h1 class="program-selection__title">Подбор программы</h1>
-          <p class="program-selection__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+          <p class="program-selection__description">Заполните анкету, и мы подберем<br> программу питания для вашего кота</p>
           <form class="form" action="https://echo.htmlacademy.ru/" method="get">
             <div class="form__description">
               <h2 class="visually-hidden">Описание кота</h2>
@@ -52,7 +52,7 @@
                 <input class="form__input-value" type="number" id="cat-weight" name="cat-weight" value="7" required>
               </p>
               <p class="form__input">
-                <label class="form__input-name" for="cat-age">Возраст (лет):</label>
+                <label class="form__input-name" for="cat-age">Возраст(лет):</label>
                 <input class="form__input-value" type="number" id="cat-age" name="cat-age" value="7" required>
               </p>
             </div>
@@ -91,11 +91,13 @@
               </p>
             </div>
             <div class="form__comment">
-              <h2 class="form__title">Комментарий</h2>
-              <textarea name="comment-value" placeholder="Расскажите обо всех повАдках кота"></textarea>
+              <h2 class="form__title form__title--comment">Комментарий</h2>
+              <p class="form__textarea">
+                <textarea class="form__textarea-discription" name="comment-value" placeholder="Расскажите обо всех повАдках кота"></textarea>
+              </p>
             </div>
             <div class="form__additional control">
-              <h2 class="control__title">Дополнительно</h2>
+              <h2 class="form__title form__title--additional">Дополнительно</h2>
               <ul class="control__list">
                 <li class="control__item">
                   <label class="control__label">
@@ -123,7 +125,7 @@
                 </li>
               </ul>
             </div>
-            <button class="form__submit submin" type="submit">Отправить заявку</button>
+            <button class="button form__submit" type="submit">Отправить заявку</button>
             <small class="form__legend">
               * — Обязательные поля
             </small>
