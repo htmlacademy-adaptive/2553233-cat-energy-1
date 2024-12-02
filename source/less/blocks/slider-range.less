@@ -1,0 +1,35 @@
+.slider-range {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.slider-range__item {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  max-width: 280px;
+}
+
+.slider-range__slide {
+  width: 50%;
+  overflow: hidden;
+
+  &--before {
+    text-align: right;
+  }
+
+  &--after {
+    text-align: left;
+    transform: scale(-1, 1);
+  }
+}
+
+.slider-range__img {
+  max-width: 280px;
+
+  &--after {
+    transform: scale(-1, 1);
+  }
+}

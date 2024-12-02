@@ -1,0 +1,95 @@
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__description {
+  padding-bottom:10px;
+  border-bottom: 1px solid #D9D9D9;
+}
+
+.form__input {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  margin: 0;
+  padding: 0 20px 14px;
+  font-family: @oswald;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.form__input-name,
+.form__input-value {
+  font-family: "Oswald";
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  overflow-wrap: break-word;
+}
+
+.form__input-value {
+  width: 100%;
+  padding: 14px 15px 13px;
+  color: #444444;
+  border: 1px solid #E7E7E7;
+}
+
+.form__control {
+  border-bottom: 1px solid #E7E7E7;
+}
+
+.form__title {
+  font-family: "Oswald";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 26px;
+  margin: 0;
+  padding: 26px 20px 35px;
+  color: #000000;
+
+  &--comment {
+    padding-bottom: 38px;
+  }
+
+  &--additional {
+    padding-bottom: 34px;
+  }
+}
+
+.form__textarea {
+  padding: 0 20px;
+  margin: 0;
+}
+
+.form__textarea-discription {
+  font-family: @oswald;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 18px;
+  color: #444444;
+  text-transform: uppercase;
+  padding: 14px;
+  padding-left: 15px;
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 150px;
+  border: 1px solid #E7E7E7;
+}
+
+.form__submit {
+  border: none;
+  box-sizing: border-box;
+  margin: 0 20px;
+}
+
+.form__legend {
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  color: #000000;
+  padding: 21px 20px 32px;
+}
