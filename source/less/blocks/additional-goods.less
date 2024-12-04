@@ -1,5 +1,9 @@
 .additional-goods {
   padding: 25px 20px 35px;
+
+  @media (min-width: @tablet-width) {
+    padding: 70px 30px 70px;
+  }
 }
 
 .additional-goods__title {
@@ -22,6 +26,19 @@
 .additional-goods__item {
   padding: 13px 0 19px;
   border-bottom: 1px solid #CDCDCD;
+
+  @media (min-width: @tablet-width) {
+    border-left: 1px solid #CDCDCD;
+    border-right: 1px solid #CDCDCD;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .additional-goods-card {
+    display: flex;
+    flex-direction: column;
+    padding: 0 38px;
+  }
 }
 
 .additional-goods-card__title {
@@ -55,4 +72,11 @@
   color: #FFFFFF;
   margin: 0;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    background-image: url(../../img/background-additional-goods-present-tablet.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    padding: 71px 125px 69px 421px;
+  }
 }

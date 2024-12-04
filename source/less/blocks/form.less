@@ -6,6 +6,11 @@
 .form__description {
   padding-bottom:10px;
   border-bottom: 1px solid #D9D9D9;
+
+  @media (min-width: @tablet-width) {
+    border: none;
+    padding-bottom: 52px;
+  }
 }
 
 .form__input {
@@ -17,6 +22,14 @@
   font-family: @oswald;
   font-size: 16px;
   line-height: 18px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 70px 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 110px 20px;
+  }
 }
 
 .form__input-name,
@@ -38,6 +51,14 @@
 
 .form__control {
   border-bottom: 1px solid #E7E7E7;
+
+  @media (min-width: @tablet-width) {
+    border: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    border: none;
+  }
 }
 
 .form__title {
@@ -50,18 +71,47 @@
   padding: 26px 20px 35px;
   color: #000000;
 
+  @media (min-width: @tablet-width) {
+    padding: 0 70px 76px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+
   &--comment {
     padding-bottom: 38px;
+
+    @media (min-width: @tablet-width) {
+      padding-bottom: 87px;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding-bottom: 78px;
+    }
   }
 
   &--additional {
     padding-bottom: 34px;
+
+    @media (min-width: @tablet-width) {
+      padding-bottom: 57px;
+    }
   }
 }
 
 .form__textarea {
   padding: 0 20px;
   margin: 0;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 70px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 110px;
+  }
 }
 
 .form__textarea-discription {

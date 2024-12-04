@@ -1,6 +1,21 @@
 .life-example {
   background-color: #EAEAEA;
   padding: 25px 20px 40px;
+
+  @media (min-width: @tablet-width) {
+    padding: 45px 30px 101px;
+    background-color: #FFFFFF;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 0 75px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .life-example__wrapper {
+    width: 405px;
+  }
 }
 
 .life-example__title {
@@ -24,6 +39,11 @@
   list-style: none;
   display: flex;
   justify-content: space-between;
+
+  @media (min-width: @desktop-width) {
+    justify-content: flex-start;
+    gap: 42px;
+  }
 }
 
 .life-example__item {
@@ -63,4 +83,9 @@
   text-transform: uppercase;
   color: #000000;
   padding-bottom: 20px;
+  margin: 0;
+
+  @media (min-width: @desktop-width) {
+    text-align: left;
+  }
 }

@@ -8,15 +8,28 @@
   justify-content: space-between;
   align-items: center;
   padding: 13px 20px 15px;
+  background-color: #FFFFFF;
+  width: 320px;
+  box-sizing: border-box;
+  margin: 0 auto;
 
   &--secondary {
     border-bottom: 1px solid #D9D9D9;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+    padding: 25px 30px 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1440px;
+    padding: 55px 110px 0;
   }
 }
 
 .main-header__logo {
   display: flex;
-  flex-direction: row;
   align-items: center;
   gap: 56px;
 }

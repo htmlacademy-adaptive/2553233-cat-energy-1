@@ -1,3 +1,15 @@
 .main-container {
   flex-grow: 1;
+  background-color: #FFFFFF;
+  width: 320px;
+  margin: 0 auto;
+  box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1440px;
+  }
 }
