@@ -1,10 +1,28 @@
+.cooperation {
+  position: relative;
+}
+
 .cooperation__wrapper {
   display: flex;
-  padding: 26px 20px;
+  padding-top: 26px;
+  padding-bottom: 26px;
   background-color: #F2F2F2;
 
   &--main {
     background-color: #FFFFFF;
+  }
+
+  @media (min-width: @tablet-width) {
+    justify-content: space-between;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    top: 95px;
+    left: 110px;
+    width: 565px;
+    box-sizing: border-box;
+    padding: 60px 80px;
   }
 }
 
@@ -21,8 +39,14 @@
 .cooperation__description {
   margin: 0;
   line-height: 20px;
+
+  @media (min-width: @tablet-width) {
+    text-align: right;
+  }
 }
 
 .cooperation__map {
   display: block;
+  width: 320px;
+  margin: 0 auto;
 }
