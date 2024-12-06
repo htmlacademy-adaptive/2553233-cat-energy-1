@@ -1,12 +1,12 @@
 .advantages {
-  padding: 0 20px 49px;
+  padding-bottom: 49px;
 
   @media (min-width: @tablet-width) {
-    padding: 0 30px 47px;
+    padding-bottom: 47px;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 0 0 69px;
+    padding-bottom: 69px;
   }
 }
 
@@ -35,7 +35,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
     justify-content: space-between;
     gap: 10px;
   }

@@ -4,10 +4,14 @@
   font-style: normal;
   font-size: 36px;
   line-height: 36px;
-  margin: 0;
+  margin: 0 -20px;
   padding: 27px 20px 40px;
   border-bottom: 1px solid #EBEBEB;
   color: #000000;
+}
+
+.catalog__wrapper {
+  margin: 0 -20px;
 }
 
 .catalog__list {
@@ -23,9 +27,8 @@
   }
 
   @media (min-width: @desktop-width) {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    row-gap: 63px;
-    column-gap: 80px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 63px 80px;
   }
 }
 

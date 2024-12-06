@@ -1,15 +1,16 @@
 .card {
   padding: 20px 20px 25px;
+  display: flex;
+  flex-direction: column;
 
   @media (min-width: @tablet-width) {
-    display: flex;
-    flex-direction: column;
     background-color: #F2F2F2;
   }
 }
 
 .card__wrapper {
   display: flex;
+  justify-content: space-between;
 
   @media (min-width: @tablet-width) {
     flex-direction: column;
@@ -20,6 +21,7 @@
 
 .card__image {
   padding: 10.5px 36px;
+  box-sizing: content-box;
 }
 
 .card__title {

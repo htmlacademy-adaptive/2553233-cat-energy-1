@@ -8,37 +8,41 @@
   </head>
   <body class="page__body">
     <header class="main-header main-header--secondary">
-      <a class="main-header__logo">
-        <img src="img/logo.svg" height="38px" width="33px" alt="Кэт энерджи">
-        <img src="img/site-name.svg" height="18px" width="101px" alt="Название сайта CAT ENERGY">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="index.html">
-                Главная
-              </a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="catalog.html">
-                Каталог продукций
-              </a>
-            </li>
-            <li class="main-nav__item main-nav__item--active">
-              <a class="main-nav__link" href="#">
-                Подбор программы
-              </a>
-            </li>
-          </ul>
+      <div class="container">
+        <div class="main-header__row">
+          <a class="main-header__logo">
+            <img src="img/logo.svg" height="38px" width="33px" alt="Кэт энерджи">
+            <img src="img/site-name.svg" height="18px" width="101px" alt="Название сайта CAT ENERGY">
+          </a>
+          <nav class="main-nav">
+            <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+            <div class="main-nav__wrapper main-nav__wrapper--mobile-close">
+              <ul class="main-nav__list">
+                <li class="main-nav__item main-nav__item--active">
+                  <a class="main-nav__link" href="#">
+                    Главная
+                  </a>
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__link" href="catalog.html">
+                    Каталог продукций
+                  </a>
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__link" href="form.html">
+                    Подбор программы
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
         </div>
-      </nav>
+      </div>
     </header>
 
     <main class="main-container">
       <section class="program-selection">
-        <div class="program-selection__wrapper">
+        <div class="container">
           <h1 class="program-selection__title">Подбор программы</h1>
           <p class="program-selection__description">Заполните анкету, и мы подберем<br> программу питания для вашего кота</p>
           <form class="form" action="https://echo.htmlacademy.ru/" method="get">
@@ -135,7 +139,7 @@
       </section>
 
       <section class="cooperation">
-        <div class="cooperation__wrapper">
+        <div class="container cooperation__wrapper">
           <h2 class="visually-hidden">Сотрудничество</h2>
           <p class="cooperation__title">Приглашаем к сотрудничеству дилеров!</p>
           <p class="cooperation__description">
@@ -148,7 +152,7 @@
       </section>
     </main>
 
-    <footer class="main-footer">
+    <footer class="main-footer container">
       <div class="main-footer__logo">
         <a class="site__logo">
           <img src="img/site-name.svg" height="18px" width="101px" alt="Название сайта CAT ENERGY">          </a>
