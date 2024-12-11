@@ -6,16 +6,11 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: 475px;
+    width: 600px;
   }
 }
 
 .main-nav__toggle {
-  min-width: 24px;
-  min-height: 24px;
-  background-image: url("../../img/nav-open.svg");
-  background-repeat: no-repeat;
-  background-color: transparent;
   border: none;
 
   @media (min-width: @tablet-width) {
@@ -23,21 +18,51 @@
   }
 }
 
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 24px;
+  height: 2px;
+  background-color: #000000;
+  box-shadow: 0 8px 0 0 #000000, 0 16px 0 0 #000000;
+}
+
+.main-nav--opened .main-nav__toggle {
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 9px;
+    right: 0;
+    width: 24px;
+    height: 2px;
+    background-color: #000000;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+@media (max-width: @mobile-width-only) {
+  .main-nav--closed .main-nav__item {
+    display: none;
+  }
+}
+
 .main-nav__wrapper {
   position: absolute;
   width: 320px;
-  background-color: #FFFFFF;
-  top: 45px;
+  top: 44px;
   right: -20px;
   z-index: 1;
-
-  &--mobile-open {
-    display: block;
-  }
-
-  &--mobile-close {
-    display: none;
-  }
 
   @media (min-width: @tablet-width) {
     position: relative;
@@ -55,8 +80,12 @@
 
   @media (min-width: @tablet-width) {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
     gap: 33px;
+  }
+
+  @media (min-width: @desktop-width) {
+    justify-content: end;
   }
 }
 
@@ -67,6 +96,21 @@
 
   @media (min-width: @tablet-width) {
     border: none;
+    padding: 0;
+
+    &--active {
+      padding-top: 10px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid @green-line;
+
+      @media (min-width: @desktop-width) {
+        border-color: #FFFFFF;
+
+        .main-header--secondary & {
+          border-color: @green-line;
+        }
+      }
+    }
   }
 }
 
@@ -78,4 +122,20 @@
   line-height: 20px;
   text-decoration: none;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+.main-header--index .main-nav__link {
+  color: #FFFFFF;
+}
 }

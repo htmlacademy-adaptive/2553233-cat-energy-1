@@ -13,3 +13,11 @@ a {
 *,*::before, *::after {
   box-sizing: border-box;
 }
+
+@supports(-webkit-appearance: none) or (-moz-appearance: none) {
+  input[type='checkbox'],
+  input[type='radio'] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+}

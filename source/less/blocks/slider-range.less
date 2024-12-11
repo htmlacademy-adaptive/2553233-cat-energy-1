@@ -2,6 +2,14 @@
   position: relative;
   display: flex;
   justify-content: center;
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+    background-color: transparent;
+    position: absolute;
+    top: -47px;
+    right: 110px;
+  }
 }
 
 .slider-range__item {
@@ -10,6 +18,11 @@
   text-align: center;
   width: 100%;
   max-width: 280px;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 101px;
+    margin-top: -20px;
+  }
 }
 
 .slider-range__slide {
