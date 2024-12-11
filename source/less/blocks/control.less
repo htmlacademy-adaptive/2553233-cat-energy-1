@@ -3,18 +3,21 @@
   padding-bottom: 6px;
 
   @media (min-width: @tablet-width) {
-    padding: 0 70px 65px;
+    padding: 0 0 65px;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 0 110px 65px;
+    padding: 0 0 65px;
   }
 }
 
 .control__list {
   list-style: none;
   margin: 0;
-  padding: 0 20px;
+  padding: 0 20px 19px;
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
 
   @media (min-width: @tablet-width) {
     border: 1px solid #CDCDCD;
@@ -23,20 +26,38 @@
 
   @media (min-width: @desktop-width) {
     border: 1px solid #CDCDCD;
+    padding: 25px 0;
   }
 }
 
-@media (min-width: @tablet-width) {
-  .control__list--not-mobile {
+
+.control__list--not-mobile {
+  @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 32px 123px;
+    gap: 32px 10px;
     border: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
+
+
 .control__item {
-  padding-bottom:  13px;
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 27px;
+  }
+
+  @media (min-width: @desktop-width) {
+    .control__list--not-mobile & {
+      margin: 0;
+    }
+  }
 }
 
 .control__label {
@@ -45,8 +66,69 @@
   line-height: 18px;
   text-transform: uppercase;
   padding-left: 45px;
+
+  @media (min-width: @desktop-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .control__label-input {
   margin: 0;
+}
+
+.control__label-circle {
+  position: absolute;
+  left: 0;
+  top: -5px;
+  width: 30px;
+  height: 30px;
+  background-color: #ffffff;
+  border: 1px solid #CDCDCD;
+  border-radius: 50%;
+}
+
+.control__label-circle {
+  position: absolute;
+  left: 0;
+  top: -5px;
+  width: 30px;
+  height: 30px;
+  background-color: #ffffff;
+  border: 1px solid #CDCDCD;
+  border-radius: 50%;
+}
+
+.control__label-input[type="radio"]:checked + .control__label-circle::after {
+  content: "";
+  background-image: url(../../img/radiobutton-active-icon.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 7px;
+  left: 7px;
+  width: 13px;
+  height: 13px;
+  display: block;
+}
+
+.control__label-square {
+  position: absolute;
+  left: 0;
+  top: -5px;
+  width: 30px;
+  height: 30px;
+  background-color: #ffffff;
+  border: 1px solid #CDCDCD;
+}
+
+.control__label-input[type="checkbox"]:checked + .control__label-square::after {
+  content: "";
+  background-image: url(../../img/checkbox-active-icon.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 8px;
+  left: 5px;
+  width: 18px;
+  height: 14px;
+  display: block;
 }
