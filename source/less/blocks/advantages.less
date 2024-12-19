@@ -3,10 +3,12 @@
 
   @media (min-width: @tablet-width) {
     padding-bottom: 47px;
+    border-bottom: 1px solid #E6E6E6;
   }
 
   @media (min-width: @desktop-width) {
-    padding-bottom: 69px;
+    padding-bottom: 205px;
+    border: none;
   }
 }
 
@@ -18,6 +20,15 @@
   font-weight: 400;
   color: #000000;
   padding-bottom: 40px;
+
+  @media (min-width: @tablet-width) {
+    font-size: @tablet-h1size;
+    line-height: @tablet-h1size;
+  }
+
+  @media (min-width: @desktop-width) {
+
+  }
 }
 
 .advantages__list {
@@ -31,7 +42,7 @@
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 10px;
+    gap: 37px 137px;
   }
 
   @media (min-width: @desktop-width) {
@@ -45,15 +56,79 @@
   padding-left: 80px;
 
   @media (min-width: @tablet-width) {
-    padding-left: 0;
-    padding-top: 151px;
+    padding: 151px 0 57px;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 151px 0 57px;
+
   }
 }
 
 .advantages__description {
+  position: relative;
   margin: 0;
+  z-index: 2;
+
+  &::before {
+    content: '';
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 60px;
+    height: 60px;
+    left: -80px;
+    top: 0;
+
+    @media (min-width: @tablet-width) {
+      width: 80px;
+      height: 80px;
+      left: 0;
+      top: -111px;
+    }
+  }
+
+  &--leaf::before {
+    background-image: url(../../img/advantages-icon-leaf.svg);
+  }
+
+  &--clock::before {
+    background-image: url(../../img/advantages-icon-clock.svg);
+  }
+
+  &--powder::before {
+    background-image: url(../../img/advantages-icon-like-powder.svg);
+  }
+
+  &--kitchen-appliances::before {
+    background-image: url(../../img/advantages-icon-kitchen-appliances.svg);
+  }
+
+  @media (min-width: @tablet-width) {
+    &::after {
+      content: '';
+      position: absolute;
+      background-repeat: no-repeat;
+      width: 112px;
+      height: 230px;
+      left: 118px;
+      top: -111px;
+      z-index: -1;
+    }
+
+    &--leaf::after {
+      background-image: url(../../img/advantages-number-one.svg);
+    }
+
+    &--clock::after {
+      background-image: url(../../img/advantages-number-four.svg);
+    }
+
+    &--powder::after {
+      background-image: url(../../img/advantages-number-two.svg);
+    }
+
+    &--kitchen-appliances::after {
+      background-image: url(../../img/advantages-number-three.svg);
+    }
+  }
 }
