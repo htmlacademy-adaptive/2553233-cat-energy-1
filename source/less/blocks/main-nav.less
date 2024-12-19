@@ -51,8 +51,8 @@
   }
 }
 
-@media (max-width: @mobile-width-only) {
-  .main-nav--closed .main-nav__item {
+.main-nav--closed .main-nav__item {
+  @media (max-width: @mobile-width-only) {
     display: none;
   }
 }
@@ -105,12 +105,14 @@
 
       @media (min-width: @desktop-width) {
         border-color: #FFFFFF;
-
-        .main-header--secondary & {
-          border-color: @green-line;
-        }
       }
     }
+  }
+}
+
+.main-header--secondary .main-nav__item {
+  @media (min-width: @desktop-width) {
+    border-color: @green-line;
   }
 }
 

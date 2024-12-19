@@ -69,10 +69,7 @@
   margin: 0;
   z-index: 2;
 
-  &--leaf::before,
-  &--clock::before,
-  &--powder::before,
-  &--kitchen-appliances::before {
+  &::before {
     content: '';
     position: absolute;
     background-repeat: no-repeat;
@@ -107,10 +104,7 @@
   }
 
   @media (min-width: @tablet-width) {
-    &--leaf::after,
-    &--clock::after,
-    &--powder::after,
-    &--kitchen-appliances::after {
+    &::after {
       content: '';
       position: absolute;
       background-repeat: no-repeat;
