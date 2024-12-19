@@ -13,8 +13,8 @@
   }
 }
 
-@media (min-width: @desktop-width) {
-  .form__description-wrapper {
+.form__description-wrapper {
+  @media (min-width: @desktop-width) {
     display: flex;
     gap: 80px;
   }
@@ -45,26 +45,8 @@
   font-size: 16px;
   line-height: 18px;
 
-  &--email::after {
+  &::after {
     content: "";
-    background-image: url(../../img/form-email-icon.svg);
-    background-repeat: no-repeat;
-    width: 18px;
-    height: 14px;
-    top: 16px;
-    right: 32px;
-    position: absolute;
-
-
-  @media (min-width: @desktop-width) {
-    top: 20px;
-    right: 20px;
-  }
-  }
-
-  &--tel::after {
-    content: "";
-    background-image: url(../../img/form-telnum-icon.svg);
     background-repeat: no-repeat;
     width: 18px;
     height: 16px;
@@ -79,11 +61,15 @@
   }
   }
 
-  @media (min-width: @tablet-width) {
-    padding: 0 0 20px;
+  &--email::after {
+    background-image: url(../../img/form-email-icon.svg);
   }
 
-  @media (min-width: @desktop-width) {
+  &--tel::after {
+    background-image: url(../../img/form-telnum-icon.svg);
+  }
+
+  @media (min-width: @tablet-width) {
     padding: 0 0 20px;
   }
 }
@@ -97,7 +83,7 @@
   white-space: nowrap;
   overflow-wrap: break-word;
 
-  @media (min-width: @desktop-width) {
+  @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 30px;
   }
@@ -182,9 +168,8 @@
   }
 }
 
-
-@media (min-width: @desktop-width) {
-  .form__input-wrapper {
+.form__input-wrapper {
+  @media (min-width: @desktop-width) {
     display: flex;
     justify-content: space-between;
   }

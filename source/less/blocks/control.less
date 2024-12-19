@@ -20,12 +20,11 @@
   gap: 19px;
 
   @media (min-width: @tablet-width) {
-    border: 1px solid #CDCDCD;
+    border: 1px solid #E7E7E7;
     padding: 23px 0 14px;
   }
 
   @media (min-width: @desktop-width) {
-    border: 1px solid #CDCDCD;
     padding: 25px 0;
   }
 }
@@ -67,7 +66,7 @@
   text-transform: uppercase;
   padding-left: 45px;
 
-  @media (min-width: @desktop-width) {
+  @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 30px;
   }
@@ -75,9 +74,11 @@
 
 .control__label-input {
   margin: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
 }
 
-.control__label-circle {
+.control__label-circle, .control__label-square {
   position: absolute;
   left: 0;
   top: -5px;
@@ -85,17 +86,18 @@
   height: 30px;
   background-color: #ffffff;
   border: 1px solid #CDCDCD;
-  border-radius: 50%;
+
+  @media (min-width: @tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 0;
+  }
 }
 
 .control__label-circle {
-  position: absolute;
-  left: 0;
-  top: -5px;
-  width: 30px;
-  height: 30px;
-  background-color: #ffffff;
-  border: 1px solid #CDCDCD;
   border-radius: 50%;
 }
 
@@ -103,22 +105,18 @@
   content: "";
   background-image: url(../../img/radiobutton-active-icon.svg);
   background-repeat: no-repeat;
+  background-size: contain;
   position: absolute;
-  top: 7px;
-  left: 7px;
+  top: 9px;
+  left: 9px;
   width: 13px;
   height: 13px;
   display: block;
-}
 
-.control__label-square {
-  position: absolute;
-  left: 0;
-  top: -5px;
-  width: 30px;
-  height: 30px;
-  background-color: #ffffff;
-  border: 1px solid #CDCDCD;
+  @media (min-width: @tablet-width) {
+    width: 20px;
+    height: 20px;
+  }
 }
 
 .control__label-input[type="checkbox"]:checked + .control__label-square::after {
