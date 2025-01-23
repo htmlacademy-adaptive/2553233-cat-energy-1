@@ -17,15 +17,17 @@
   }
 
   @media (min-width: @tablet-width) {
-    background-color: #F2F2F2;
-    padding: 40px 37px;
+    background: linear-gradient(to bottom, #FFFFFF 15.5%, #F2F2F2 15.5%);
+    padding: 10px 37px 40px;
 
     &--additional {
-      background-color: #FFFFFF;
+      background: #FFFFFF;
       border: 2px solid #F2F2F2;
       display: flex;
       flex-direction: column;
       align-items: center;
+      margin-top: 78px;
+      padding: 0 35px 40px;
     }
 
     &--additional::before {
@@ -54,7 +56,7 @@
   width: 100%;
 
   @media (min-width: @tablet-width) {
-    padding: 120px 0 23px;
+    padding: 160px 0 23px;
     width: 134px;
   }
 }
@@ -67,7 +69,7 @@
   @media (min-width: @tablet-width) {
     line-height: 18px;
     width: 174px;
-    padding-bottom: 82px;
+    padding: 0 0 82px;
   }
 }
 
@@ -82,25 +84,37 @@
   }
 }
 
-
-.card__image {
-  padding: 10.5px 36px;
-  box-sizing: content-box;
+.card__image-wrapper {
+  width: 140px;
+  height: 107px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 
   @media (min-width: @tablet-width) {
-    padding: 0;
-    padding-bottom: 41px;
+    width: 200px;
+    height: 210px;
+    margin-bottom: 22px;
   }
+
+  @media (min-width: @tablet-width) {
+    width: 169px;
+  }
+}
+
+.card__image {
+  box-sizing: content-box;
 }
 
 .card__wrapper-description {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: 100%;
 
   @media (min-width: @tablet-width) {
     align-items: center;
+    width: 100%;
   }
 }
 
@@ -120,6 +134,7 @@
     font-size: 20px;
     line-height: 24px;
     width: 135px;
+    padding-bottom: 21px;
   }
 }
 
@@ -146,19 +161,31 @@
   text-align: left;
   width: 70px;
   margin: 0;
+
+  @media (min-width: @tablet-width) {
+    padding: 4px 0;
+  }
 }
 
 .card__definition-value {
   font-weight: 400;
   text-align: right;
   width: 70px;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 5px;
+  }
 }
 
 .card__button-additional {
-  width: 100%;
   border: 0;
   background-color: #F2F2F2;
   color: #444444;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
 
   @media (min-width: @desktop-width) {
     padding: 10px 39px;

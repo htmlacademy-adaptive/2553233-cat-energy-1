@@ -6,9 +6,6 @@
   @media (min-width: @desktop-width) {
     margin: 0;
     background-color: transparent;
-    position: absolute;
-    top: -47px;
-    right: 110px;
   }
 }
 
@@ -21,7 +18,11 @@
 
   @media (min-width: @tablet-width) {
     padding-bottom: 101px;
-    margin-top: -20px;
+    max-width: 560px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 0;
   }
 }
 
@@ -44,5 +45,9 @@
 
   &--after {
     transform: scale(-1, 1);
+  }
+
+  @media (min-width: @tablet-width) {
+    max-width: 560px;
   }
 }
