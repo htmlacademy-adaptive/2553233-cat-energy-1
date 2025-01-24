@@ -1,15 +1,26 @@
 .life-example {
-  background-color: #EAEAEA;
+  background: #EAEAEA;
   padding: 25px 0 40px;
 
   @media (min-width: @tablet-width) {
     padding: 45px 0 0;
-    background-color: #FFFFFF;
+    background: #FFFFFF;
   }
 
   @media (min-width: @desktop-width) {
     padding: 0 0 75px;
-    background-color: #F2F2F2;
+    background: #F2F2F2;
+    background: linear-gradient(to bottom, #FFFFFF 22.5%, #F2F2F2 22.5%);
+  }
+}
+
+.life-example .container {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @desktop-width) {
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
 
@@ -31,9 +42,7 @@
   @media (min-width: @desktop-width) {
     font-size: 60px;
     line-height: 60px;
-    padding-bottom: 0;
-    position: absolute;
-    top: -127px;
+    padding-bottom: 146px;
   }
 }
 
@@ -46,13 +55,12 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding-top: 70px;
     padding-bottom: 69px;
     width: 432px;
   }
 }
 
-.life-example__wrapper {
+.life-example__items-wrapper {
   display: flex;
   flex-direction: column;
 
@@ -60,7 +68,7 @@
     flex-direction: row;
     justify-content: space-between;
     gap: 20px;
-    padding-bottom: 250px;
+    padding-bottom: 99px;
   }
 
   @media (min-width: @desktop-width) {
@@ -180,19 +188,14 @@
   }
 }
 
-@media (min-width: @tablet-width) {
-  .life-example__slider {
+.life-example__slider {
+  @media (min-width: @tablet-width) {
     margin: 0 -30px;
-    background-color: #EAEAEA;
+    background: linear-gradient(to bottom, #FFFFFF 24%, #EAEAEA 24%);
   }
-}
 
-@media (min-width: @desktop-width) {
-  .life-example__slider {
+  @media (min-width: @desktop-width) {
     margin: 0;
-    background-color: transparent;
-    position: absolute;
-    top: -47px;
-    right: 110px;
+    background: transparent;
   }
 }
