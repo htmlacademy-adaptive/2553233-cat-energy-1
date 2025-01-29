@@ -7,7 +7,7 @@
   &--additional::before {
     content: '';
     position: absolute;
-    background-image: url(../../img/card-additional-plus-logo.svg);
+    background-image: url(../img/card-additional-plus-logo.svg);
     background-repeat: no-repeat;
     background-size: contain;
     width: 30px;
@@ -31,7 +31,7 @@
     }
 
     &--additional::before {
-      background-image: url(../../img/card-additional-plus-logo-tablet.svg);
+      background-image: url(../img/card-additional-plus-logo-tablet.svg);
       width: 60px;
       height: 60px;
       left: 123px;
@@ -40,6 +40,8 @@
   }
 
   @media (min-width: @desktop-width) {
+    width: 245px;
+
     &--additional::before {
       width: 60px;
       height: 60px;
@@ -152,7 +154,7 @@
   @media (min-width: @tablet-width) {
     font-size: 16px;
     line-height: 20px;
-    border-bottom: 1px solid #CDCDCD;
+    border-bottom: 1px solid #cdcdcd;
   }
 }
 
@@ -191,4 +193,3 @@
     padding: 10px 39px;
   }
 }
-

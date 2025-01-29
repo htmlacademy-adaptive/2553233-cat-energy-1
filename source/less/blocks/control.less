@@ -7,7 +7,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding: 0 0 65px;
+    padding: 0;
   }
 }
 
@@ -25,7 +25,8 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding: 25px 0;
+    padding: 29px 0;
+    gap: 23px;
   }
 }
 
@@ -85,15 +86,11 @@
   width: 30px;
   height: 30px;
   background-color: #ffffff;
-  border: 1px solid #CDCDCD;
+  border: 1px solid #cdcdcd;
 
   @media (min-width: @tablet-width) {
     width: 40px;
     height: 40px;
-  }
-
-  @media (min-width: @desktop-width) {
-    top: 0;
   }
 }
 
@@ -103,7 +100,7 @@
 
 .control__label-input[type="radio"]:checked + .control__label-circle::after {
   content: "";
-  background-image: url(../../img/radiobutton-active-icon.svg);
+  background-image: url(../img/radiobutton-active-icon.svg);
   background-repeat: no-repeat;
   background-size: contain;
   position: absolute;
@@ -121,12 +118,20 @@
 
 .control__label-input[type="checkbox"]:checked + .control__label-square::after {
   content: "";
-  background-image: url(../../img/checkbox-active-icon.svg);
+  background-image: url(../img/checkbox-active-icon.svg);
   background-repeat: no-repeat;
+  background-size: contain;
   position: absolute;
   top: 8px;
   left: 5px;
   width: 18px;
   height: 14px;
   display: block;
+
+  @media (min-width: @tablet-width) {
+    top: 9px;
+    left: 6px;
+    width: 26px;
+    height: 26px;
+  }
 }

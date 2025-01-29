@@ -4,7 +4,7 @@
   font-weight: 400;
   padding: 27px 0 20px;
   color: #FFFFFF;
-  z-index: 0;
+  z-index: 1;
 
   @media (min-width: @tablet-width) {
     color: #000000;
@@ -14,23 +14,6 @@
 
   @media (min-width: @desktop-width) {
     padding: 110px 0 266px;
-  }
-}
-
-@media (max-width: @mobile-width-only) {
-  .programs__header::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    margin: 0 -20px;
-    height: 303px;
-    background-image: url(../../img/index-background.png);
-    background-repeat: no-repeat;
-    background-position: center top;
-    background-color: #62A53A;
-    z-index: -1;
   }
 }
 
@@ -78,22 +61,21 @@
 
   @media (min-width: @tablet-width) {
     padding: 0;
-    width: 709px;
-    height: 609px;
-    display: inline-block;
     position: absolute;
     z-index: -1;
     bottom: 0;
   }
 
   @media (min-width: @desktop-width) {
-    bottom: 48px;
-    left: 35%;
+    top: 29px;
+    left: 36.6%;
   }
 }
 
-@media (min-width: @tablet-width) {
-  .programs__button {
+.programs__button {
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 26px;
     padding: 14px 26px;
     margin-left: 90px;
   }
@@ -124,7 +106,7 @@
   &--weight-loss::before {
     content: '';
     position: absolute;
-    background-image: url(../../img/programs-list-weight-loss.svg);
+    background-image: url(../img/programs-list-weight-loss.svg);
     background-repeat: no-repeat;
     background-size: contain;
     width: 50px;
@@ -136,7 +118,7 @@
   &--mass-gain::before {
     content: '';
     position: absolute;
-    background-image: url(../../img/programs-list-mass-gain.svg);
+    background-image: url(../img/programs-list-mass-gain.svg);
     background-repeat: no-repeat;
     background-size: contain;
     width: 67px;
@@ -239,7 +221,7 @@
   &::after {
     content: '';
     position: absolute;
-    background-image: url(../../img/icon_arrow.svg);
+    background-image: url(../img/icon_arrow.svg);
     background-repeat: no-repeat;
     width: 32px;
     height: 10px;

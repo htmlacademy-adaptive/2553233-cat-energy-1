@@ -5,10 +5,9 @@ import postcss from 'gulp-postcss';
 import autoprefixer from 'autoprefixer';
 import csso from 'postcss-csso';
 import rename from 'gulp-rename';
-import terser from 'gulp-terser';
-// import squoosh from 'gulp-libsquoosh';
 import svgo from 'gulp-svgmin';
 import svgstore from 'gulp-svgstore';
+import squoosh from 'gulp-libsquoosh';
 import del from 'del';
 import browser from 'browser-sync';
 
@@ -84,7 +83,7 @@ const sprite = () => {
 
 const copy = (done) => {
   gulp.src([
-  'source/fonts/*.{woff2,woff}',
+  'source/fonts/**/*.{woff2,woff}',
   'source/*.ico',
   ], {
   base: 'source'
@@ -110,6 +109,11 @@ const server = (done) => {
     notify: false,
     ui: false,
   });
+  done();
+}
+
+const reload = (done) => {
+  browser.reload();
   done();
 }
 

@@ -27,8 +27,8 @@
 
 .additional-goods__wrapper {
   @media (min-width: @desktop-width) {
-      display: flex;
-      gap: 81px;
+    display: flex;
+    gap: 81px;
   }
 }
 
@@ -36,7 +36,7 @@
   list-style: none;
   margin: 0;
   padding: 0 0 35px;
-  border-top: 1px solid #CDCDCD;
+  border-top: 1px solid #cdcdcd;
 
   @media (min-width: @tablet-width) {
     padding-bottom: 70px;
@@ -49,11 +49,16 @@
 
 .additional-goods__item {
   padding: 13px 0 19px;
-  border-bottom: 1px solid #CDCDCD;
+  border-bottom: 1px solid #cdcdcd;
 
   @media (min-width: @tablet-width) {
-    border-left: 1px solid #CDCDCD;
-    border-right: 1px solid #CDCDCD;
+    border-left: 1px solid #cdcdcd;
+    border-right: 1px solid #cdcdcd;
+  }
+
+  @media (min-width: @desktop-width) {
+    border-left: 0;
+    border-right: 0;
   }
 }
 
@@ -80,6 +85,7 @@
 
   @media (min-width: @desktop-width) {
     gap: 164px;
+    align-items: center;
   }
 }
 
@@ -97,6 +103,7 @@
 
   @media (min-width: @desktop-width) {
     min-width: 130px;
+    padding-bottom: 0;
   }
 }
 
@@ -108,6 +115,7 @@
   @media (min-width: @desktop-width) {
     min-width: 285px;
     padding-right: 40px;
+    padding-bottom: 0;
   }
 }
 
@@ -117,7 +125,7 @@
 }
 
 .additional-goods-card__description-price {
-  @media (min-width: @tablet-width)  {
+  @media (min-width: @tablet-width) {
     min-width: 86px;
     padding-left: 45px;
     text-align: right;
@@ -132,7 +140,7 @@
 
 .additional-goods__present {
   position: relative;
-  background-image: url(../../img/background-additional-goods-resent.png);
+  background-image: url("../img/background-additional-goods-resent.png");
   background-repeat: no-repeat;
   background-size: auto;
   padding: 189px 61px 43px 58px;
@@ -146,7 +154,7 @@
   &::before {
     content: '';
     position: absolute;
-    background-image: url(../../img/additional-goods-present-icon.svg);
+    background-image: url(../img/additional-goods-present-icon.svg);
     width: 78px;
     height: 80px;
     left: 101px;
@@ -154,7 +162,7 @@
   }
 
   @media (min-width: @tablet-width) {
-    background-image: url(../../img/background-additional-goods-present-tablet.png);
+    background-image: url(../img/background-additional-goods-present-tablet.png);
     background-repeat: no-repeat;
     background-size: auto;
     text-align: left;
@@ -163,7 +171,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    background-image: url(../../img/background-additional-goods-resent.png);
+    background-image: url(../img/background-additional-goods-resent.png);
     text-align: center;
     padding: 185px 64px 43px;
     width: 280px;
