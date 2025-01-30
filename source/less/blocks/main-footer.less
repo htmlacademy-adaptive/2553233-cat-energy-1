@@ -3,6 +3,11 @@
   padding-top: 40px;
   padding-bottom: 40px;
 
+  @media (min-width: @tablet-width) {
+    padding-top: 56px;
+    padding-bottom: 60px;
+  }
+
   @media (min-width: @desktop-width) {
     padding-top: 66px;
     padding-bottom: 66px;
@@ -22,10 +27,11 @@
 
 .main-footer__logo {
   text-align: center;
-  padding-bottom: 20px;
+  padding-bottom: 15px;
   border-bottom: 1px solid #D9D9D9;
 
   @media (min-width: @tablet-width) {
+    padding-top: 5px;
     padding-bottom: 0;
     border: none;
   }
@@ -34,11 +40,11 @@
 .main-footer__social {
   display: flex;
   justify-content: center;
-  padding: 20px 0;
+  padding: 23px 0 16px;
   border-bottom: 1px solid #D9D9D9;
 
   @media (min-width: @tablet-width) {
-    padding: 0;
+    padding: 8px 0 0;
     border: none;
   }
 }

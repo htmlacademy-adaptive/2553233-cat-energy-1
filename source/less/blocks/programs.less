@@ -2,7 +2,7 @@
   position: relative;
   font-family: @oswald;
   font-weight: 400;
-  padding: 27px 0 20px;
+  padding: 25px 0 20px;
   color: #FFFFFF;
   z-index: 1;
 
@@ -34,6 +34,7 @@
 
   @media (min-width: @desktop-width) {
     width: 714px;
+    padding-left: 81px;
   }
 }
 
@@ -44,13 +45,16 @@
   line-height: 14px;
   padding-bottom: 29px;
   text-align: center;
-  z-index: -3;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 20px;
     text-align: left;
     padding: 0 90px 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 81px;
   }
 }
 
@@ -63,7 +67,7 @@
     padding: 0;
     position: absolute;
     z-index: -1;
-    bottom: 0;
+    bottom: 1px;
   }
 
   @media (min-width: @desktop-width) {
@@ -76,8 +80,12 @@
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 26px;
-    padding: 14px 26px;
+    padding: 14px 27px;
     margin-left: 90px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 81px;
   }
 }
 
@@ -89,6 +97,7 @@
 
   @media (min-width: @tablet-width) {
     padding-bottom: 45px;
+    gap: 30px;
   }
 
   @media (min-width: @desktop-width) {
@@ -101,7 +110,7 @@
 .programs__item {
   position: relative;
   background-color: #F2F2F2;
-  padding: 30px 20px 18px;
+  padding: 30px 20px 22px;
 
   &--weight-loss::before {
     content: '';
@@ -128,25 +137,25 @@
   }
 
   @media (min-width: @tablet-width) {
-    padding: 77px 53px 53px;
+    padding: 77px 52px 57px;
 
     &--weight-loss::before {
       width: 200px;
       height: 211px;
       left: 445px;
-      top: 63px;
+      top: 78px;
     }
 
     &--mass-gain::before {
       width: 268px;
       height: 200px;
-      left: 411px;
+      left: 414px;
       top: 91px;
     }
   }
 
   @media (min-width: @desktop-width) {
-    padding: 77px 52px 55px;
+    padding: 77px 52px 60px;
     width: 100%;
 
     &--weight-loss::before {
@@ -159,7 +168,7 @@
     &--mass-gain::before {
       width: 134px;
       height: 100px;
-      left: 33px;
+      left: 35px;
       top: 47px;
     }
   }
@@ -182,7 +191,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding-left: 152px;
+    padding-left: 162px;
     padding-bottom: 73px;
   }
 }
@@ -213,7 +222,7 @@
   font-family: @oswald;
   font-size: 16px;
   line-height: 16px;
-  padding-top: 15px;
+  padding-top: 18px;
   color: #000000;
   text-transform: uppercase;
   text-decoration: none;
@@ -232,10 +241,11 @@
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 30px;
+    padding-top: 4px;
 
     &::after {
       margin-left: 25px;
-      bottom: 22%;
+      bottom: 32%;
     }
   }
 }

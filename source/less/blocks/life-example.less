@@ -1,14 +1,15 @@
 .life-example {
   background: #EAEAEA;
-  padding: 25px 0 40px;
+  padding: 25px 0 36px;
 
   @media (min-width: @tablet-width) {
-    padding: 45px 0 0;
+    padding: 44px 0 0;
     background: #FFFFFF;
+    background: linear-gradient(to bottom, #fff 57.2%, #eaeaea 57.2%);
   }
 
   @media (min-width: @desktop-width) {
-    padding: 0 0 75px;
+    padding: 0 0 66px;
     background: #F2F2F2;
     background: linear-gradient(to bottom, #FFFFFF 22.5%, #F2F2F2 22.5%);
   }
@@ -34,8 +35,8 @@
   margin: 0;
 
   @media (min-width: @tablet-width) {
-    font-size: @tablet-h2size;
-    line-height: @tablet-h2size;
+    font-size: @tablet-h1size;
+    line-height: @tablet-h1size;
     padding-bottom: 60px;
   }
 
@@ -68,7 +69,7 @@
     flex-direction: row;
     justify-content: space-between;
     gap: 20px;
-    padding-bottom: 99px;
+    padding-bottom: 102px;
   }
 
   @media (min-width: @desktop-width) {
@@ -99,7 +100,7 @@
 
 .life-example__item {
   position: relative;
-  padding-bottom: 34px;
+  padding-bottom: 35px;
   display: flex;
   justify-content: center;
 
@@ -124,7 +125,7 @@
   border: 1px solid #cdcdcd;
   border-radius: 3px;
   text-align: center;
-  padding: 14.5px 0 14.5px;
+  padding: 14px 0 15px;
 
   @media (min-width: @tablet-width) {
     min-width: 162px;
@@ -145,7 +146,7 @@
   text-align: center;
   background-color: #EAEAEA;
   position: absolute;
-  bottom: 18px;
+  bottom: 19px;
   padding: 0 13px;
   max-width: 60px;
   margin: 0;
@@ -172,7 +173,6 @@
   text-transform: uppercase;
   color: #000000;
   padding-bottom: 20px;
-  margin: 0;
 
   @media (min-width: @tablet-width) {
     text-align: right;
@@ -183,16 +183,20 @@
   }
 
   @media (min-width: @desktop-width) {
+    display: flex;
+    gap: 66px;
     text-align: left;
     width: 500px;
+    padding-top: 3px;
   }
 }
 
+.life-example__price-info {
+  padding-bottom: 10px;
+  margin: 0;
+}
+
 .life-example__slider {
-  @media (min-width: @tablet-width) {
-    margin: 0 -30px;
-    background: linear-gradient(to bottom, #FFFFFF 24%, #EAEAEA 24%);
-  }
 
   @media (min-width: @desktop-width) {
     margin: 0;

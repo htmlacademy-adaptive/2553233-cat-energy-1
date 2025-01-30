@@ -4,10 +4,9 @@
 
 .cooperation__wrapper {
   display: flex;
-  justify-content: space-between;
-  width: 100%;
-  padding-top: 26px;
-  padding-bottom: 26px;
+  gap: 17px;
+  padding-top: 27px;
+  padding-bottom: 25px;
   background-color: #F2F2F2;
 
   &--main {
@@ -22,7 +21,7 @@
   @media (min-width: @desktop-width) {
     position: absolute;
     top: 95px;
-    right: calc(50% + 50px);
+    right: calc(50% + 45px);
     width: 565px;
     box-sizing: border-box;
     padding: 60px 80px;
@@ -37,19 +36,36 @@
   color: #111111;
   margin: 0;
   max-width: 140px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 26px;
+    max-width: none;
+  }
 }
 
 .cooperation__description {
-  margin: 0;
   line-height: 20px;
 
   @media (min-width: @tablet-width) {
     text-align: right;
   }
+
+  @media (min-width: @desktop-width) {
+    text-align: left;
+  }
+}
+
+.cooperation__description-info {
+  margin: 0;
+  padding-bottom: 20px;
 }
 
 .cooperation__map {
   display: block;
   width: 100%;
-  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    height: 400px;
+  }
 }

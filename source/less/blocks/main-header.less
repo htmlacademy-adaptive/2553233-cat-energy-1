@@ -17,7 +17,7 @@
   }
 
   @media (min-width: @tablet-width) {
-    padding-top: 15px;
+    padding-top: 24px;
     padding-bottom: 0;
   }
 
@@ -66,4 +66,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (min-width: @tablet-width) {
+    justify-content: flex-start;
+    gap: 93px;
+  }
+
+  @media (min-width: @desktop-width) {
+    justify-content: space-between;
+  }
 }

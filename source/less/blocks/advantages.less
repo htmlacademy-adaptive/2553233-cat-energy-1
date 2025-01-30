@@ -1,5 +1,5 @@
 .advantages {
-  padding-bottom: 49px;
+  padding-bottom: 53px;
 
   @media (min-width: @tablet-width) {
     padding-bottom: 47px;
@@ -7,7 +7,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding-bottom: 205px;
+    padding-bottom: 68px;
     border: none;
   }
 }
@@ -19,11 +19,12 @@
   line-height: 40px;
   font-weight: 400;
   color: #000000;
-  padding-bottom: 40px;
+  padding-bottom: 42px;
 
   @media (min-width: @tablet-width) {
     font-size: @tablet-h1size;
     line-height: @tablet-h1size;
+    padding-bottom: 32px;
   }
 
   @media (min-width: @desktop-width) {
@@ -34,7 +35,7 @@
 .advantages__list {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 26px;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -42,13 +43,13 @@
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 37px 137px;
+    gap: 37px 60px;
   }
 
   @media (min-width: @desktop-width) {
     grid-template-columns: repeat(4, 1fr);
     justify-content: space-between;
-    gap: 10px;
+    gap: 75px;
   }
 }
 
@@ -57,10 +58,17 @@
 
   @media (min-width: @tablet-width) {
     padding: 151px 0 57px;
+    width: 250px;
   }
 
   @media (min-width: @desktop-width) {
 
+  }
+}
+
+.advantages__item-br {
+  @media (max-width: @mobile-width-only) {
+    display: none;
   }
 }
 
@@ -77,7 +85,7 @@
     width: 60px;
     height: 60px;
     left: -80px;
-    top: 0;
+    top: -2px;
 
     @media (min-width: @tablet-width) {
       width: 80px;
@@ -89,18 +97,34 @@
 
   &--leaf::before {
     background-image: url(../img/advantages-icon-leaf.svg);
+
+    @media (min-width: @tablet-width) {
+      background-image: url(../img/advantages-icon-leaf-tablet.svg);
+    }
   }
 
   &--clock::before {
     background-image: url(../img/advantages-icon-clock.svg);
+
+    @media (min-width: @tablet-width) {
+      background-image: url(../img/advantages-icon-clock-tablet.svg);
+    }
   }
 
   &--powder::before {
     background-image: url(../img/advantages-icon-like-powder.svg);
+
+    @media (min-width: @tablet-width) {
+      background-image: url(../img/advantages-icon-like-powder-tablet.svg);
+    }
   }
 
   &--kitchen-appliances::before {
     background-image: url(../img/advantages-icon-kitchen-appliances.svg);
+
+    @media (min-width: @tablet-width) {
+      background-image: url(../img/advantages-icon-kitchen-appliances-tablet.svg);
+    }
   }
 
   @media (min-width: @tablet-width) {
@@ -108,9 +132,9 @@
       content: '';
       position: absolute;
       background-repeat: no-repeat;
-      width: 112px;
+      width: 120px;
       height: 230px;
-      left: 118px;
+      left: 125px;
       top: -111px;
       z-index: -1;
     }
