@@ -1,13 +1,17 @@
 .cooperation {
   position: relative;
+  background-color: #F2F2F2;
+}
+
+.cooperation--index {
+  background-color: #FFFFFF;
 }
 
 .cooperation__wrapper {
   display: flex;
   gap: 17px;
   padding-top: 27px;
-  padding-bottom: 25px;
-  background-color: #F2F2F2;
+  padding-bottom: 5px;
 
   &--main {
     background-color: #FFFFFF;
@@ -15,16 +19,17 @@
 
   @media (min-width: @tablet-width) {
     justify-content: space-between;
-    padding: 60px 70px;
+    padding: 60px 70px 39px;
   }
 
   @media (min-width: @desktop-width) {
     position: absolute;
+    background-color: #FFFFFF;
     top: 95px;
     right: calc(50% + 45px);
     width: 565px;
     box-sizing: border-box;
-    padding: 60px 80px;
+    padding: 60px 80px 40px;
   }
 }
 
@@ -45,7 +50,9 @@
 }
 
 .cooperation__description {
+  margin: 0;
   line-height: 20px;
+  padding-bottom: 20px;
 
   @media (min-width: @tablet-width) {
     text-align: right;
@@ -58,7 +65,10 @@
 
 .cooperation__description-info {
   margin: 0;
-  padding-bottom: 20px;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 20px;
+  }
 }
 
 .cooperation__map {

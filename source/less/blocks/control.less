@@ -1,6 +1,5 @@
 .control {
-  padding-top: 22px;
-  padding-bottom: 6px;
+  padding-top: 29px;
 
   @media (min-width: @tablet-width) {
     padding: 0 0 65px;
@@ -14,14 +13,14 @@
 .control__list {
   list-style: none;
   margin: 0;
-  padding: 0 20px 19px;
+  padding: 0 20px 21px;
   display: flex;
   flex-direction: column;
-  gap: 19px;
+  gap: 23px;
 
   @media (min-width: @tablet-width) {
     border: 1px solid #E7E7E7;
-    padding: 23px 0 14px;
+    padding: 27px 0 31px;
   }
 
   @media (min-width: @desktop-width) {
@@ -44,6 +43,18 @@
   }
 }
 
+.control__list--additional {
+  gap: 23px;
+
+  @media (min-width: @tablet-width) {
+    gap: 43px 62px;
+  }
+
+  @media (min-width: @desktop-width) {
+    gap: 82px;
+  }
+}
+
 
 
 .control__item {
@@ -54,9 +65,15 @@
   }
 
   @media (min-width: @desktop-width) {
-    .control__list--not-mobile & {
+    .control__list--not-mobile {
       margin: 0;
     }
+  }
+}
+
+.control__item--additional {
+  @media (min-width: @tablet-width) {
+    margin-left: 0;
   }
 }
 
@@ -65,11 +82,12 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
-  padding-left: 45px;
+  padding-left: 41px;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 30px;
+    padding-left: 54px;
   }
 }
 
@@ -104,8 +122,8 @@
   background-repeat: no-repeat;
   background-size: contain;
   position: absolute;
-  top: 9px;
-  left: 9px;
+  top: 7px;
+  left: 6.5px;
   width: 13px;
   height: 13px;
   display: block;
@@ -113,6 +131,8 @@
   @media (min-width: @tablet-width) {
     width: 20px;
     height: 20px;
+    top: 8.5px;
+    left: 8.5px;
   }
 }
 
@@ -133,5 +153,13 @@
     left: 6px;
     width: 26px;
     height: 26px;
+  }
+}
+
+.control--additional {
+  padding-top: 19px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
   }
 }

@@ -1,6 +1,6 @@
 .card {
   position: relative;
-  padding: 20px 20px 25px;
+  padding: 22px 20px 24px;
   display: flex;
   flex-direction: column;
 
@@ -17,8 +17,8 @@
   }
 
   @media (min-width: @tablet-width) {
-    background: linear-gradient(to bottom, #FFFFFF 15.5%, #F2F2F2 15.5%);
-    padding: 10px 37px 40px;
+    background: linear-gradient(to bottom, #FFFFFF 15.8%, #F2F2F2 15.8%);
+    padding: 13px 37px 39px;
 
     &--additional {
       background: #FFFFFF;
@@ -26,16 +26,16 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      margin-top: 78px;
-      padding: 0 35px 40px;
+      margin-top: 81px;
+      padding: 0 35px 38px;
     }
 
     &--additional::before {
       background-image: url(../img/card-additional-plus-logo-tablet.svg);
       width: 60px;
       height: 60px;
-      left: 123px;
-      top: 50px;
+      left: 130px;
+      top: 48px;
     }
   }
 
@@ -45,44 +45,55 @@
     &--additional::before {
       width: 60px;
       height: 60px;
-      left: 92.5px;
-      top: 50px;
+      left: 89.5px;
+      top: 48px;
     }
   }
 }
 
 .card--additional .card__title {
-  padding: 58px 0 8px;
+  padding: 57px 0 8px;
   color: #111111;
   text-align: center;
   width: 100%;
 
   @media (min-width: @tablet-width) {
-    padding: 160px 0 23px;
+    padding: 158px 0 23px;
     width: 134px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 150px 0 23px;
   }
 }
 
 .card--additional .card__definition-name {
+  font-size: 12px;
+  line-height: 16px;
   text-align: center;
   width: 100%;
-  padding-bottom: 21px;
+  padding-bottom: 20px;
 
   @media (min-width: @tablet-width) {
+    font-size: 16px;
     line-height: 18px;
     width: 174px;
     padding: 0 0 82px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 0 92px;
   }
 }
 
 .card__wrapper {
   display: flex;
-  padding-bottom: 17px;
+  padding-bottom: 15px;
 
   @media (min-width: @tablet-width) {
     flex-direction: column;
     align-items: center;
-    padding-bottom: 32px;
+    padding-bottom: 31.5px;
   }
 }
 
@@ -95,13 +106,13 @@
   justify-content: center;
 
   @media (min-width: @tablet-width) {
-    width: 200px;
+    width: 169px;
     height: 210px;
-    margin-bottom: 22px;
+    margin-bottom: 19px;
   }
 
-  @media (min-width: @tablet-width) {
-    width: 169px;
+  @media (min-width: @desktop-width) {
+    margin-bottom: 9px;
   }
 }
 
@@ -128,7 +139,7 @@
   color: #222222;
   margin: 0;
   text-transform: uppercase;
-  padding-bottom: 14px;
+  padding-bottom: 11px;
   width: 95px;
 
   @media (min-width: @tablet-width) {
@@ -136,12 +147,15 @@
     font-size: 20px;
     line-height: 24px;
     width: 135px;
-    padding-bottom: 21px;
+    padding-bottom: 11.7px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 16px;
   }
 }
 
 .card__description {
-  padding-bottom: 25px;
   width: 100%;
   border-spacing: 0;
   border-collapse: collapse;
@@ -165,7 +179,11 @@
   margin: 0;
 
   @media (min-width: @tablet-width) {
-    padding: 4px 0;
+    padding: 7px 0 5px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 6px 0 7.5px;
   }
 }
 
@@ -175,8 +193,16 @@
   width: 70px;
 
   @media (min-width: @tablet-width) {
-    padding-bottom: 5px;
+    padding-top: 5px;
   }
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+  }
+}
+
+.card__link {
+  padding: 10px 0;
 }
 
 .card__button-additional {
