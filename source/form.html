@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body class="page__body">
     <header class="main-header main-header--secondary">
@@ -16,7 +16,10 @@
               <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
               <img src="img/logo.svg" alt="Кэт энерджи">
             </picture>
-            <img src="img/site-name.svg" alt="Название сайта CAT ENERGY">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/site-name-desktop.svg">
+              <img src="img/site-name.svg" alt="Название сайта CAT ENERGY">
+            </picture>
           </a>
           <nav class="main-nav main-nav--closed main-nav--nojs">
             <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -62,7 +65,7 @@
                   <input class="form__input-value" type="number" id="cat-weight" name="cat-weight" value="7" required>
                 </p>
                 <p class="form__input">
-                  <label class="form__input-name" for="cat-age">Возраст(лет):</label>
+                  <label class="form__input-name" for="cat-age">Возраст (лет):</label>
                   <input class="form__input-value" type="number" id="cat-age" name="cat-age" value="7" required>
                 </p>
               </div>
@@ -94,7 +97,7 @@
               </div>
             </div>
             <div class="form__contacts">
-              <h2 class="form__title">Контактные данные (владельца кота)</h2>
+              <h2 class="form__title form__title--contacts">Контактные данные<br class="form__title-br"> (владельца кота)</h2>
               <div class="form__input-wrapper">
                 <p class="form__input form__input--email">
                   <label class="form__input-name" for="cat-email">E-mail:*</label>
@@ -112,31 +115,31 @@
                 <textarea class="form__textarea-discription" name="comment-value" placeholder="Расскажите обо всех повАдках кота"></textarea>
               </p>
             </div>
-            <div class="form__additional control">
+            <div class="form__additional control control--additional">
               <h2 class="form__title form__title--additional">Дополнительно</h2>
-              <ul class="control__list control__list--not-mobile">
-                <li class="control__item">
+              <ul class="control__list control__list--not-mobile control__list--additional">
+                <li class="control__item control__item--additional">
                   <label class="control__label">
                     <input class="control__label-input" type="checkbox" name="sweetener">
                     <span class="control__label-square"></span>
                     Сахарозаменитель
                   </label>
                 </li>
-                <li class="control__item">
+                <li class="control__item control__item--additional">
                   <label class="control__label">
                     <input class="control__label-input" type="checkbox" name="drinking-water">
                     <span class="control__label-square"></span>
                     Питьевая вода
                   </label>
                 </li>
-                <li class="control__item">
+                <li class="control__item control__item--additional">
                   <label class="control__label">
                     <input class="control__label-input" type="checkbox" name="milk">
                     <span class="control__label-square"></span>
                     Молоко
                   </label>
                 </li>
-                <li class="control__item">
+                <li class="control__item control__item--additional">
                   <label class="control__label">
                     <input class="control__label-input" type="checkbox" name="vitamins">
                     <span class="control__label-square"></span>
@@ -158,14 +161,16 @@
       <section class="cooperation">
         <div class="container cooperation__wrapper">
           <h2 class="visually-hidden">Сотрудничество</h2>
-          <p class="cooperation__title">Приглашаем к сотрудничеству дилеров!</p>
-          <p class="cooperation__description">
-            ул. Большая<br>
-            Конюшенная, д. 19/8<br>
-            Санкт-Петербург
-          </p>
-         </div>
-          <iframe class="cooperation__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036257198161!2d30.32047247732078!3d59.93871916209359!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1730462590686!5m2!1sru!2sru" width="320" height="362" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <p class="cooperation__title">Приглашаем<br> к сотрудничеству<br> дилеров!</p>
+          <div class="cooperation__description">
+            <p class="cooperation__description-info">
+              ул. Большая<br>
+              Конюшенная, д. 19/8<br>
+            </p>
+            <span class="cooperation__description-town">Санкт-Петербург</span>
+          </div>
+        </div>
+        <iframe class="cooperation__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036257198161!2d30.32047247732078!3d59.93871916209359!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1730462590686!5m2!1sru!2sru" width="320" height="362" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </section>
     </main>
 

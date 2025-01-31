@@ -1,4 +1,19 @@
 .main-container {
   flex-grow: 1;
-  background-color: #FFFFFF;
+}
+
+.main-container--index::after {
+  @media (max-width: @mobile-width-only) {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 65px;
+    margin: 0 -20px;
+    height: 303px;
+    background-image: url(../img/index-background.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-color: #62a53a;
+  }
 }
