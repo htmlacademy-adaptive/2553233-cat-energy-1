@@ -3,6 +3,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  color: #444444;
+
+  &:active {
+    opacity: 30%;
+  }
 
   @media (min-width: @tablet-width) {
     gap: 23px;
@@ -13,4 +18,17 @@
   margin: 0;
   font-size: 16px;
   line-height: 20px;
+}
+
+.copyright__link-icon {
+  fill: #666666;
+
+  &:hover,
+  &:focus {
+    fill: #68B738;
+  }
+
+  &:active {
+    opacity: 30%;
+  }
 }

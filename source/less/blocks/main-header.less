@@ -5,7 +5,7 @@
   font-weight: 400;
   font-size: 20px;
   line-height: 20px;
-  padding: 13px 0 15px;
+  padding: 12px 0 14px;
   background-color: #FFFFFF;
 
   &--secondary {
@@ -29,16 +29,14 @@
 
 
 
-
-@media (min-width: @desktop-width) {
-  .main-header--index {
+.main-header--index {
+  @media (min-width: @desktop-width) {
     position: relative;
-  }
 
-  .main-header--index::after {
+  &::after {
     content: '';
     position: absolute;
-    background-image: url(../img/index-background-desktop.png);
+    background-image: url(../img/index-background-desktop.jpg);
     background-repeat: no-repeat;
     width: 50%;
     height: 694px;
@@ -47,12 +45,22 @@
     background-position: right;
     background-color: #64A73C;
   }
+  }
 }
 
 .main-header__logo {
   display: flex;
   align-items: center;
   gap: 56px;
+
+  &:hover,
+  &:focus {
+    opacity: 80%;
+  }
+
+  &:active {
+    opacity: 60%;
+  }
 
   @media (min-width: @tablet-width) {
     gap: 13px;
@@ -64,6 +72,7 @@
 }
 
 .main-header__row {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;

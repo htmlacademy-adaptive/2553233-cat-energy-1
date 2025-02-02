@@ -58,26 +58,6 @@
   font-size: 16px;
   line-height: 18px;
 
-  &::after {
-    content: "";
-    background-repeat: no-repeat;
-    width: 18px;
-    height: 16px;
-    top: 16px;
-    right: 32px;
-    position: absolute;
-
-  @media (min-width: @tablet-width) {
-    top: 19px;
-    right: 14px;
-  }
-
-  @media (min-width: @desktop-width) {
-    top: 20px;
-    right: 16px;
-  }
-  }
-
   &--email::after {
     background-image: url(../img/form-email-icon.svg);
   }
@@ -95,9 +75,29 @@
   }
 }
 
+.form__input::after {
+  content: "";
+  background-repeat: no-repeat;
+  width: 18px;
+  height: 16px;
+  top: 16px;
+  right: 32px;
+  position: absolute;
+
+@media (min-width: @tablet-width) {
+  top: 19px;
+  right: 14px;
+}
+
+@media (min-width: @desktop-width) {
+  top: 20px;
+  right: 16px;
+}
+}
+
 .form__input-name,
 .form__input-value {
-  font-family: "Oswald";
+  font-family: @oswald;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
@@ -115,6 +115,19 @@
   padding: 14px 15px 13px;
   color: #444444;
   border: 1px solid #E7E7E7;
+
+  &:hover {
+    border: 1px solid #CDCDCD;
+  }
+
+  &:focus,
+  &:active {
+    outline: 2px solid #444444;
+  }
+
+  &:invalid {
+    outline: 2px solid #FF8282;
+  }
 
   @media (min-width: @tablet-width) {
     padding: 9px 18px 13px;
@@ -163,7 +176,7 @@
 .form__title {
   display: inline-block;
   position: relative;
-  font-family: "Oswald";
+  font-family: @oswald;
   font-weight: 400;
   font-style: normal;
   font-size: 24px;
@@ -172,25 +185,6 @@
   padding: 0 20px;
   color: #000000;
   background: #FFFFFF;
-
-  &::after,
-  &::before {
-    content: "";
-    position: absolute;
-    top: 45%;
-    width: 100vw;
-    height: 3px;
-    background: #68b738;
-    z-index: -1;
-  }
-
-  &::after {
-    left: 20px;
-  }
-
-  &::before {
-    right: 0;
-  }
 
   @media (min-width: @tablet-width) {
     font-size: @tablet-h2size;
@@ -203,6 +197,25 @@
     font-size: 36px;
     line-height: 36px;
   }
+}
+
+.form__title::after,
+.form__title::before {
+  content: "";
+  position: absolute;
+  top: 45%;
+  width: 100vw;
+  height: 3px;
+  background: #68b738;
+  z-index: -1;
+}
+
+.form__title::after {
+  left: 20px;
+}
+
+.form__title::before {
+  right: 0;
 }
 
 .form__title--contacts {

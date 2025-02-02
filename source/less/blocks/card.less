@@ -4,18 +4,6 @@
   display: flex;
   flex-direction: column;
 
-  &--additional::before {
-    content: '';
-    position: absolute;
-    background-image: url(../img/card-additional-plus-logo.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 30px;
-    height: 30px;
-    top: 25px;
-    left: 145px;
-  }
-
   @media (min-width: @tablet-width) {
     background: linear-gradient(to bottom, #FFFFFF 15.8%, #F2F2F2 15.8%);
     padding: 13px 37px 39px;
@@ -29,25 +17,34 @@
       margin-top: 81px;
       padding: 0 35px 38px;
     }
-
-    &--additional::before {
-      background-image: url(../img/card-additional-plus-logo-tablet.svg);
-      width: 60px;
-      height: 60px;
-      left: 130px;
-      top: 48px;
-    }
   }
 
   @media (min-width: @desktop-width) {
     width: 245px;
+  }
+}
 
-    &--additional::before {
-      width: 60px;
-      height: 60px;
-      left: 89.5px;
-      top: 48px;
-    }
+.card--additional::before {
+  content: '';
+  position: absolute;
+  background-image: url(../img/card-additional-plus-logo.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 30px;
+  height: 30px;
+  top: 25px;
+  left: 145px;
+
+  @media (min-width: @tablet-width) {
+    background-image: url(../img/card-additional-plus-logo-tablet.svg);
+    width: 60px;
+    height: 60px;
+    left: 130px;
+    top: 48px;
+  }
+
+  @media (min-width: @desktop-width) {
+    left: 89.5px;
   }
 }
 
@@ -63,7 +60,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding: 150px 0 23px;
+    padding: 148px 0 23px;
   }
 }
 
@@ -93,7 +90,7 @@
   @media (min-width: @tablet-width) {
     flex-direction: column;
     align-items: center;
-    padding-bottom: 31.5px;
+    padding-bottom: 33px;
   }
 }
 
@@ -183,7 +180,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding: 6px 0 7.5px;
+    padding: 6px 0 7px;
   }
 }
 
@@ -209,6 +206,12 @@
   border: 0;
   background-color: #F2F2F2;
   color: #444444;
+
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: #EBEBEB;
+  }
 
   @media (min-width: @tablet-width) {
     padding-left: 80px;
