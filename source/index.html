@@ -57,12 +57,13 @@
               <h1 class="programs__title">Функциональное питание для котов</h1>
               <p class="programs__slogan">Занялся собой? Займись котом!</p>
               <picture>
-                <source media="(min-width: 1440px)" srcset="img/index-can-desktop.webp">
-                <source media="(min-width: 1440px)" srcset="img/index-can-desktop.png">
-                <source media="(min-width: 768px)" srcset="img/index-can-tablet.webp">
-                <source media="(min-width: 768px)" srcset="img/index-can-tablet.png">
-                <source media="(max-width: 768px)" srcset="img/index-can.webp">
-                <img class="programs__img" src="img/index-can.png" alt="Фото упаковки здорового питания Cat Energy">
+                <source type="image/webp" media="(min-width: 1440px)" srcset="img/index-can-desktop.webp, img/index-can-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/index-can-tablet.webp, img/index-can-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/index-can.webp, img/index-can@2x.webp 2x">
+
+                <source media="(min-width: 1440px)" srcset="img/index-can-desktop.png, img/index-can-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/index-can-tablet.png, img/index-can-tablet@2x.png 2x">
+                <img class="programs__img" src="img/index-can.png" srcset="img/index-can@2x.png" alt="Фото упаковки здорового питания Cat Energy">
               </picture>
               <a href="form.html" class="button programs__button"><span class="button-text">Подобрать программу</span></a>
           </header>
@@ -160,18 +161,19 @@
             <div class="slider-range__item">
               <div class="slider-range__slide slider-range__slide--before">
                 <picture>
-                  <source media="(min-width: 768px)" srcset="img/cat-tablet-before.webp">
-                  <source media="(min-width: 768px)" srcset="img/cat-tablet-before.png">
-                  <source media="(max-width: 768px)" srcset="img/cat-mobile-before.webp">
-                  <img class="slider-range__img slider-range__img--before" src="img/cat-mobile-before.png" alt="Кот до здорового питания">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/cat-tablet-before.webp, img/cat-tablet-before@2x.webp 2x">
+                  <source type="image/webp" srcset="img/cat-mobile-before.webp, img/cat-mobile-before@2x.webp 2x">
+
+                  <source media="(min-width: 768px)" srcset="img/cat-tablet-before.png, img/cat-tablet-before@2x.png 2x">
+                  <img class="slider-range__img slider-range__img--before" src="img/cat-mobile-before.png" srcset="img/cat-mobile-before@2x.png 2x" alt="Кот до здорового питания">
                 </picture>
               </div>
               <div class="slider-range__slide slider-range__slide--after">
                 <picture>
-                  <source media="(min-width: 768px)" srcset="img/cat-tablet-after.webp">
-                  <source media="(min-width: 768px)" srcset="img/cat-tablet-after.png">
-                  <source media="(max-width: 768px)" srcset="img/cat-mobile-after.webp">
-                  <img class="slider-range__img slider-range__img--after" src="img/cat-mobile-after.png" alt="Кот после здорового питания">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/cat-tablet-after.webp, img/cat-tablet-after@2x.webp 2x">
+                  <source type="image/webp" srcset="img/cat-mobile-after.webp, img/cat-mobile-after@2x.webp 2x">
+                  <source media="(min-width: 768px)" srcset="img/cat-tablet-after.png, img/cat-tablet-after@2x.png 2x">
+                  <img class="slider-range__img slider-range__img--after" src="img/cat-mobile-after.png" srcset="img/cat-mobile-after@2x.png 2x" alt="Кот после здорового питания">
                 </picture>
               </div>
             </div>

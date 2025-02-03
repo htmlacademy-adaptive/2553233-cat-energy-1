@@ -1,6 +1,7 @@
 .slider-range {
   position: relative;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 
   @media (min-width: @desktop-width) {
@@ -11,6 +12,7 @@
 
 .slider-range__item {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   text-align: center;
   width: 100%;
@@ -64,14 +66,14 @@
   width: 4px;
   height: 100%;
   border-radius: 2px;
-  background-color: grey;
+  background-color: #666666;
 
   &:hover {
-    background-color: green;
+    background-color: #68b738;
   }
 
   &:active {
-    background-color: green;
+    background-color: #5eaa2f;
   }
 
   @media (min-width: @tablet-width) {
@@ -86,8 +88,8 @@
   left: 50%;
   top: 50%;
   transform: translate(-20px, -20px);
-  background: white;
-  border: 2px solid grey;
+  background: #ffffff;
+  border: 2px solid #666666;
   border-radius: 20px;
   cursor: pointer;
 
@@ -100,11 +102,11 @@
   }
 
   &:hover {
-    border: 2px solid green;
+    border: 2px solid #68b738;
   }
 
   &:active {
-    border: 2px solid green;
+    border: 2px solid #5eaa2f;
   }
 
   &--left::before,
@@ -117,7 +119,7 @@
     margin-left: -9px;
     border-top: 9px solid transparent;
     border-bottom: 9px solid transparent;
-    border-right: 9px solid grey;
+    border-right: 9px solid #666666;
   }
 
   &--right::after {
@@ -126,11 +128,11 @@
 
   &--left:hover::before,
   &--right:hover::after {
-    border-right-color: green;
+    border-right-color: #5eaa2f;
   }
 
   &--left:active::before,
   &--right:active::after {
-    border-right-color: green;
+    border-right-color: #5eaa2f;
   }
 }

@@ -3,7 +3,7 @@
 
   @media (min-width: @tablet-width) {
     padding-bottom: 47px;
-    border-bottom: 1px solid #E6E6E6;
+    border-bottom: 1px solid #e6e6e6;
   }
 
   @media (min-width: @desktop-width) {
@@ -30,6 +30,7 @@
 
 .advantages__list {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   gap: 26px;
   list-style: none;
@@ -71,7 +72,7 @@
 }
 
 .advantages__description::before {
-  content: '';
+  content: "";
   position: absolute;
   background-repeat: no-repeat;
   background-size: contain;
@@ -90,69 +91,69 @@
 
 .advantages__description::after {
   @media (min-width: @tablet-width) {
-      content: '';
-      position: absolute;
-      background-repeat: no-repeat;
-      width: 120px;
-      height: 230px;
-      left: 125px;
-      top: -111px;
-      z-index: -1;
-    }
+    content: "";
+    position: absolute;
+    background-repeat: no-repeat;
+    width: 120px;
+    height: 230px;
+    left: 125px;
+    top: -111px;
+    z-index: -1;
+  }
 }
 
 .advantages__description--leaf::before {
-  background-image: url(../img/advantages-icon-leaf.svg);
+  background-image: url("../img/advantages-icon-leaf.svg");
 
   @media (min-width: @tablet-width) {
-    background-image: url(../img/advantages-icon-leaf-tablet.svg);
+    background-image: url("../img/advantages-icon-leaf-tablet.svg");
   }
 }
 
 .advantages__description--leaf::after {
   @media (min-width: @tablet-width) {
-    background-image: url(../img/advantages-number-one.svg);
+    background-image: url("../img/advantages-number-one.svg");
   }
 }
 
 .advantages__description--clock::before {
-  background-image: url(../img/advantages-icon-clock.svg);
+  background-image: url("../img/advantages-icon-clock.svg");
 
   @media (min-width: @tablet-width) {
-    background-image: url(../img/advantages-icon-clock-tablet.svg);
+    background-image: url("../img/advantages-icon-clock-tablet.svg");
   }
 }
 
 .advantages__description--clock::after {
   @media (min-width: @tablet-width) {
-    background-image: url(../img/advantages-number-four.svg);
+    background-image: url("../img/advantages-number-four.svg");
   }
 }
 
 .advantages__description--powder::before {
-  background-image: url(../img/advantages-icon-like-powder.svg);
+  background-image: url("../img/advantages-icon-like-powder.svg");
 
   @media (min-width: @tablet-width) {
-    background-image: url(../img/advantages-icon-like-powder-tablet.svg);
+    background-image: url("../img/advantages-icon-like-powder-tablet.svg");
   }
 }
 
 .advantages__description--powder::after {
   @media (min-width: @tablet-width) {
-    background-image: url(../img/advantages-number-two.svg);
+    background-image: url("../img/advantages-number-two.svg");
   }
 }
 
 .advantages__description--kitchen-appliances::before {
-  background-image: url(../img/advantages-icon-kitchen-appliances.svg);
+  background-image: url("../img/advantages-icon-kitchen-appliances.svg");
 
   @media (min-width: @tablet-width) {
-    background-image: url(../img/advantages-icon-kitchen-appliances-tablet.svg);
+    background-image: url("../img/advantages-icon-kitchen-appliances-tablet.svg");
   }
 }
 
 .advantages__description--kitchen-appliances::after {
   @media (min-width: @tablet-width) {
-    background-image: url(../img/advantages-number-three.svg);
+    background-image: url("../img/advantages-number-three.svg");
   }
 }

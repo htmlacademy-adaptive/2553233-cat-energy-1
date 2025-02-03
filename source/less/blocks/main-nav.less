@@ -16,6 +16,7 @@
   flex-shrink: 0;
   cursor: pointer;
   margin-top: 5px;
+  background: transparent;
 
   @media (min-width: @tablet-width) {
     display: none;
@@ -62,11 +63,12 @@
 .main-nav__wrapper {
   display: none;
   position: absolute;
-  width: 100%;
+  width: 320px;
   top: 44px;
   right: 0;
   left: 0;
-  background: #FFFFFF;
+  margin-left: -20px;
+  background: #ffffff;
   z-index: 2;
 
   @media (min-width: @tablet-width) {
@@ -81,14 +83,16 @@
 
 .main-nav__list {
   list-style: none;
-  margin: 0;
+  margin: 8px 0 0;
   padding: 0;
   text-align: center;
 
   @media (min-width: @tablet-width) {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     gap: 34px;
+    margin: 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -99,8 +103,7 @@
 
 .main-nav__item {
   padding: 22px 20px 24px;
-  border-top: 1px solid #E6E6E6;
-  border-bottom: 1px solid #E6E6E6;
+  border-top: 1px solid #e6e6e6;
 
   @media (min-width: @tablet-width) {
     border: none;
@@ -112,9 +115,15 @@
       border-bottom: 2px solid @green-line;
 
       @media (min-width: @desktop-width) {
-        border-color: #FFFFFF;
+        border-color: #ffffff;
       }
     }
+  }
+}
+
+.main-nav__item:last-child {
+  @media (max-width: @mobile-width-only) {
+    border-bottom: 1px solid #e6e6e6;
   }
 }
 
@@ -155,6 +164,6 @@
 
 .main-header--index .main-nav__link {
   @media (min-width: @desktop-width) {
-    color: #FFFFFF;
+    color: #ffffff;
   }
 }

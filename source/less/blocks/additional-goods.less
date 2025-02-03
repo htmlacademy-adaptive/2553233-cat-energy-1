@@ -19,16 +19,14 @@
   font-size: 24px;
   line-height: 24px;
   color: #000000;
-  background: #FFFFFF;
+  background: #ffffff;
   margin: 0 0 35px -20px;
   padding: 0 20px;
 
   @media (min-width: @tablet-width) {
-    padding-left: 40px;
     margin-bottom: 81px;
     font-size: @tablet-h2size;
     line-height: @tablet-h2size;
-
     padding: 0 40px;
     margin-left: 0;
   }
@@ -63,7 +61,8 @@
 .additional-goods__wrapper {
   @media (min-width: @desktop-width) {
     display: flex;
-    gap: 82px;
+    flex-wrap: wrap;
+    gap: 81px;
   }
 }
 
@@ -101,6 +100,7 @@
 
 .additional-goods-card {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
 
   @media (min-width: @tablet-width) {
@@ -117,6 +117,7 @@
 .additional-goods-card__wrapper {
   @media (min-width: @tablet-width) {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding-bottom: 21.5px;
   }
@@ -127,8 +128,6 @@
     padding: 0;
   }
 }
-
-
 
 .additional-goods-card__title {
   margin: 0;
@@ -153,6 +152,7 @@
 
 .additional-goods-card__description {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   padding-bottom: 13.5px;
 
@@ -187,10 +187,9 @@
 }
 
 .additional-goods__link {
-  @media (min-width: @desktop-width)
-    {
-      padding: 10px 91px;
-    }
+  @media (min-width: @desktop-width) {
+    padding: 10px 91px;
+  }
 }
 
 .additional-goods__present {
@@ -202,14 +201,14 @@
   font-size: 16px;
   line-height: 20px;
   width: 290px;
-  color: #FFFFFF;
+  color: #ffffff;
   margin: 0;
   text-align: center;
 
   &::before {
-    content: '';
+    content: "";
     position: absolute;
-    background-image: url(../img/additional-goods-present-icon.svg);
+    background-image: url("../img/additional-goods-present-icon.svg");
     width: 78px;
     height: 80px;
     left: 101px;
@@ -217,7 +216,7 @@
   }
 
   @media (min-width: @tablet-width) {
-    background-image: url(../img/background-additional-goods-present-tablet.jpg);
+    background-image: url("../img/background-additional-goods-present-tablet.jpg");
     background-repeat: no-repeat;
     background-size: auto;
     text-align: left;
@@ -231,7 +230,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    background-image: url(../img/background-additional-goods-present.jpg);
+    background-image: url("../img/background-additional-goods-present.jpg");
     background-position: top right;
     text-align: center;
     padding: 185px 41px 43px;
