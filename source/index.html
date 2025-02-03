@@ -1,9 +1,12 @@
 <!DOCTYPE html>
-<html class="page" lang="ru">
+<html class="page no-js" lang="ru">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="preload" href="fonts/oswald/oswaldmedium.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/oswald/oswaldregular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/lato/Lato-Regular.woff2" as="font" type="font/woff2" crossorigin>
     <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body class="page__body">
@@ -21,8 +24,8 @@
               <img src="img/site-name.svg" alt="Название сайта CAT ENERGY">
             </picture>
           </a>
-          <nav class="main-nav main-nav--closed main-nav--nojs">
-            <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+          <nav class="main-nav">
+            <button class="main-nav__toggle" type="button" data-burger=""><span class="visually-hidden">Открыть меню</span></button>
             <div class="main-nav__wrapper">
               <ul class="main-nav__list">
                 <li class="main-nav__item main-nav__item--active">
@@ -54,11 +57,15 @@
               <h1 class="programs__title">Функциональное питание для котов</h1>
               <p class="programs__slogan">Занялся собой? Займись котом!</p>
               <picture>
-                <source media="(min-width: 1440px)" srcset="img/index-can-desktop.png">
-                <source media="(min-width: 768px)" srcset="img/index-can-tablet.png">
-                <img class="programs__img" src="img/index-can.png" alt="Фото упаковки здорового питания Cat Energy">
+                <source type="image/webp" media="(min-width: 1440px)" srcset="img/index-can-desktop.webp, img/index-can-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/index-can-tablet.webp, img/index-can-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/index-can.webp, img/index-can@2x.webp 2x">
+
+                <source media="(min-width: 1440px)" srcset="img/index-can-desktop.png, img/index-can-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/index-can-tablet.png, img/index-can-tablet@2x.png 2x">
+                <img class="programs__img" src="img/index-can.png" srcset="img/index-can@2x.png" alt="Фото упаковки здорового питания Cat Energy">
               </picture>
-              <a href="form.html" class="button programs__button">Подобрать программу</a>
+              <a href="form.html" class="button programs__button"><span class="button-text">Подобрать программу</span></a>
           </header>
           <div class="programs__list">
             <div class="programs__item programs__item--weight-loss">
@@ -154,15 +161,27 @@
             <div class="slider-range__item">
               <div class="slider-range__slide slider-range__slide--before">
                 <picture>
-                  <source media="(min-width: 768px)" srcset="img/cat-tablet-before.png" 1x>
-                  <img class="slider-range__img slider-range__img--before" src="img/cat-mobile-before.png" alt="Кот до здорового питания">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/cat-tablet-before.webp, img/cat-tablet-before@2x.webp 2x">
+                  <source type="image/webp" srcset="img/cat-mobile-before.webp, img/cat-mobile-before@2x.webp 2x">
+
+                  <source media="(min-width: 768px)" srcset="img/cat-tablet-before.png, img/cat-tablet-before@2x.png 2x">
+                  <img class="slider-range__img slider-range__img--before" src="img/cat-mobile-before.png" srcset="img/cat-mobile-before@2x.png 2x" alt="Кот до здорового питания">
                 </picture>
               </div>
               <div class="slider-range__slide slider-range__slide--after">
                 <picture>
-                  <source media="(min-width: 768px)" srcset="img/cat-tablet-after.png" 1x>
-                  <img class="slider-range__img slider-range__img--after" src="img/cat-mobile-after.png" alt="Кот после здорового питания">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/cat-tablet-after.webp, img/cat-tablet-after@2x.webp 2x">
+                  <source type="image/webp" srcset="img/cat-mobile-after.webp, img/cat-mobile-after@2x.webp 2x">
+                  <source media="(min-width: 768px)" srcset="img/cat-tablet-after.png, img/cat-tablet-after@2x.png 2x">
+                  <img class="slider-range__img slider-range__img--after" src="img/cat-mobile-after.png" srcset="img/cat-mobile-after@2x.png 2x" alt="Кот после здорового питания">
                 </picture>
+              </div>
+            </div>
+            <div class="slider-range__scale">
+              <div class="slider-range__bar">
+                <button class="slider-range__togle slider-range__togle--left slider-range__togle--right" type="button">
+                  <span class="visually-hidden">Двигать картинку в лево, в право.</span>
+                </button>
               </div>
             </div>
           </div>
@@ -188,30 +207,30 @@
     <footer class="main-footer">
       <div class="container main-footer__row">
         <a class="main-footer__logo">
-          <img src="img/site-name.svg" height="24px" width="128px" alt="Название сайта CAT ENERGY">
+          <img src="img/site-name.svg" height="24" width="128" alt="Название сайта CAT ENERGY">
         </a>
         <div class="main-footer__social social">
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__link social__link--vkontakte">
+              <a class="social__link social__link--vkontakte" href="#">
                 <span class="visually-hidden">ВКонтакте</span>
-                <svg width="28" height="22" xlink:href="img/sprite.svg#icon-vk">
+                <svg class="social__link-icon" width="28" height="22">
                   <use xlink:href="img/sprite.svg#icon-vk"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--youtube">
+              <a class="social__link social__link--youtube" href="#">
                 <span class="visually-hidden">YouTube</span>
-                <svg width="28" height="22">
+                <svg class="social__link-icon" width="28" height="22">
                   <use xlink:href="img/sprite.svg#icon-yt"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--telegram">
+              <a class="social__link social__link--telegram" href="#">
                 <span class="visually-hidden">Telegram</span>
-                <svg width="28" height="22">
+                <svg class="social__link-icon" width="28" height="22">
                   <use xlink:href="img/sprite.svg#icon-tg"></use>
                 </svg>
               </a>
@@ -219,7 +238,7 @@
           </ul>
         </div>
         <div class="main-footer__copyright copyright">
-          <a class="copyright__link">
+          <a class="copyright__link copyright__link-icon" href="#">
             <p class="copyright__name">HTML Academy</p>
             <svg width="28" height="34" >
               <use xlink:href="img/sprite.svg#icon-htmlakademy"></use>
@@ -228,5 +247,6 @@
         </div>
       </div>
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>

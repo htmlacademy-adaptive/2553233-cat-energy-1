@@ -1,16 +1,19 @@
 <!DOCTYPE html>
-<html class="page" lang="ru">
+<html class="page no-js" lang="ru">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="preload" href="fonts/oswald/oswaldmedium.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/oswald/oswaldregular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/lato/Lato-Regular.woff2" as="font" type="font/woff2" crossorigin>
     <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body class="page__body">
     <header class="main-header main-header--secondary">
       <div class="container">
         <div class="main-header__row">
-          <a class="main-header__logo">
+          <a class="main-header__logo" href="index.html">
             <picture>
               <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
               <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
@@ -21,8 +24,8 @@
               <img src="img/site-name.svg" alt="Название сайта CAT ENERGY">
             </picture>
           </a>
-          <nav class="main-nav main-nav--closed main-nav--nojs">
-            <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+          <nav class="main-nav">
+            <button class="main-nav__toggle" type="button" data-burger=""><span class="visually-hidden">Открыть меню</span></button>
             <div class="main-nav__wrapper">
               <ul class="main-nav__list">
                 <li class="main-nav__item">
@@ -70,13 +73,13 @@
                 </p>
               </div>
               <div class="form__control control">
+                <h2 class="visually-hidden">Выбор программы</h2>
                 <ul class="control__list">
-                  <h2 class="visually-hidden">Выбор программы</h2>
                   <li class="control__item box-cleaner">
                     <label class="control__label">
                       <input class="control__label-input" type="radio" name="program-types" value="program" checked>
                       <span class="control__label-circle"></span>
-                      Похудение
+                      <span>Похудение</span>
                     </label>
                   </li>
                   <li class="control__item">
@@ -102,17 +105,23 @@
                 <p class="form__input form__input--email">
                   <label class="form__input-name" for="cat-email">E-mail:*</label>
                   <input class="form__input-value" type="email" name="cat-email" id="cat-email" value="kuklachev@gmail.com" required>
+                  <svg class="form__input-icon-email" width="18" height="14">
+                    <use xlink:href="img/sprite.svg#form-email-icon"></use>
+                  </svg>
                 </p>
                 <p class="form__input form__input--tel">
                   <label class="form__input-name" for="cat-tel">Телефон:*</label>
                   <input class="form__input-value" type="tel" id="cat-tel" name="cat-tel" value="8 (960) 900-60-90" required>
+                  <svg class="form__input-icon-telnum" width="16" height="16">
+                    <use xlink:href="img/sprite.svg#form-telnum-icon"></use>
+                  </svg>
                 </p>
               </div>
             </div>
             <div class="form__comment">
               <h2 class="form__title form__title--comment">Комментарий</h2>
               <p class="form__textarea">
-                <textarea class="form__textarea-discription" name="comment-value" placeholder="Расскажите обо всех повАдках кота"></textarea>
+                <textarea class="form__textarea-discription" name="comment-value" placeholder="Расскажите обо всех повАдках кота" required></textarea>
               </p>
             </div>
             <div class="form__additional control control--additional">
@@ -120,7 +129,7 @@
               <ul class="control__list control__list--not-mobile control__list--additional">
                 <li class="control__item control__item--additional">
                   <label class="control__label">
-                    <input class="control__label-input" type="checkbox" name="sweetener">
+                    <input class="control__label-input" type="checkbox" name="sweetener" checked>
                     <span class="control__label-square"></span>
                     Сахарозаменитель
                   </label>
@@ -149,7 +158,7 @@
               </ul>
             </div>
             <div class="form__button-wrapper">
-              <button class="button form__submit" type="submit">Отправить заявку</button>
+              <button class="button form__submit" type="submit"><span class="button-text">Отправить заявку</span></button>
               <small class="form__legend">
                 * — Обязательные поля
               </small>
@@ -177,30 +186,30 @@
     <footer class="main-footer">
       <div class="container main-footer__row">
         <a class="main-footer__logo">
-          <img src="img/site-name.svg" height="24px" width="128px" alt="Название сайта CAT ENERGY">
+          <img src="img/site-name.svg" height="24" width="128" alt="Название сайта CAT ENERGY">
         </a>
         <div class="main-footer__social social">
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__link social__link--vkontakte">
+              <a class="social__link social__link--vkontakte" href="#">
                 <span class="visually-hidden">ВКонтакте</span>
-                <svg width="28" height="22" xlink:href="img/sprite.svg#icon-vk">
+                <svg class="social__link-icon" width="28" height="22">
                   <use xlink:href="img/sprite.svg#icon-vk"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--youtube">
+              <a class="social__link social__link--youtube" href="#">
                 <span class="visually-hidden">YouTube</span>
-                <svg width="28" height="22">
+                <svg class="social__link-icon" width="28" height="22">
                   <use xlink:href="img/sprite.svg#icon-yt"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--telegram">
+              <a class="social__link social__link--telegram" href="#">
                 <span class="visually-hidden">Telegram</span>
-                <svg width="28" height="22">
+                <svg class="social__link-icon" width="28" height="22">
                   <use xlink:href="img/sprite.svg#icon-tg"></use>
                 </svg>
               </a>
@@ -208,7 +217,7 @@
           </ul>
         </div>
         <div class="main-footer__copyright copyright">
-          <a class="copyright__link">
+          <a class="copyright__link copyright__link-icon" href="#">
             <p class="copyright__name">HTML Academy</p>
             <svg width="28" height="34" >
               <use xlink:href="img/sprite.svg#icon-htmlakademy"></use>
@@ -217,5 +226,6 @@
         </div>
       </div>
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>
