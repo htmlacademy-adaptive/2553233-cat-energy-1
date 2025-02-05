@@ -81,12 +81,12 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
-  padding-left: 41px;
+  padding-left: 44px;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 30px;
-    padding-left: 54px;
+    padding-left: 60px;
   }
 }
 
@@ -96,6 +96,10 @@
 
 .control__label-input:disabled + span + span {
   opacity: 0.3;
+}
+
+.control__label-input:focus + span {
+  outline: 2px solid #000000;
 }
 
 .control__label-circle,
