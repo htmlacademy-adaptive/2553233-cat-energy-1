@@ -117,7 +117,7 @@
   appearance: textfield;
 
   &:hover {
-    border: 1px solid #cdcdcd;
+    border-color: #cdcdcd;
   }
 
   &:focus,
@@ -137,6 +137,12 @@
   @media (min-width: @desktop-width) {
     padding: 10px 20px;
   }
+}
+
+.form__input-value::-webkit-outer-spin-button,
+.form__input-value::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
 }
 
 .form__control {
